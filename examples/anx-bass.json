@@ -1,0 +1,20 @@
+{
+  "name": "Test AN-X Bass", "category": ["Bass", "Synth"], "tempo": 118,
+  "reverb": {"type": "REV-X HALL", "params": {"1": 20}},
+  "variation": {"type": "TEMPO CROSS DELAY"},
+  "parts": [{
+    "engine": "AN-X", "name": "Sub Saw", "category": ["Bass", "Synth"],
+    "volume": 110, "mono": true, "legato": true, "portamento": {"switch": 1, "time": 12},
+    "note_range": ["C-2", "C4"], "reverb_send": 8, "variation_send": 0,
+    "anx": {
+      "osc": [{"Oscillator Wave": 0, "Oscillator Octave": 1}, {"Oscillator Wave": 2, "Oscillator Octave": 2}, {"Oscillator Wave": 4, "Oscillator Octave": 1}],
+      "filter": [{"Filter Type": 1, "Filter Cutoff": 300, "Filter Resonance": 48}]
+    },
+    "ins_a": {"type": "VCM EQ 501"}, "ins_b": {"type": "VCM COMPRESSOR 376"},
+    "controllers": [
+      {"source": "Modulation Wheel", "dest": "Cutoff", "ratio": 40},
+      {"source": "AsgnKnob 1", "dest": "Resonance", "ratio": 30}
+    ],
+    "arp": {"switch": 1, "hold": 2, "names": ["1/16 Up Oct1"]}
+  }]
+}

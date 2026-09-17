@@ -1,3 +1,50 @@
+# Yamaha MONTAGE M / MODX M reverse engineering
+
+Two bodies of work live here:
+
+1. **Sound engines and performances** (2026-09): the `.pfm` performance file format used by the
+   Expanded Softsynth Plugin (ESP) and the matching MIDI bulk-dump format, decoded from the official
+   MONTAGE M Data List plus the 3631 factory performances that ship inside the plugin bundle, with
+   tools to read, write, build and install performances and reference data for every engine
+   (AWM2, Drum, FM-X, AN-X), effect, waveform, arpeggio and controller.
+2. **User arpeggio (`.arp`) files** (2026-05): the original investigation, kept below unchanged.
+
+## Repository map
+
+| Path | What |
+|---|---|
+| `docs/pfm-format.md` | `.pfm` container, block order, value encodings, `performance.cfg` index, sysex framing |
+| `docs/engines.md` | how a performance is structured; AWM2 / Drum / FM-X / AN-X parameters; effects; controllers; factory usage statistics and worked examples |
+| `docs/sound-design-playbook.md` | procedure for turning a description or song into a spec, building it and installing it |
+| `docs/controllers-reference.md` | mod-matrix (controller box) sources, destinations, Super Knob linkage, CC numbers |
+| `docs/effects-reference.md` | effect type numbering, parameter tables, lookup tables |
+| `docs/lists-reference.md` | performance, category, waveform, arpeggio and drum-kit lists |
+| `docs/params/*.md` | generated per-table parameter reference (offset, size, key, range, default) |
+| `data/midi_param_tables.json` | machine-readable MIDI parameter tables (75 tables, 1897 parameters) |
+| `data/effect_*.json`, `waveforms.json`, `arpeggio_types.json`, `performances.json`, `performance_categories.json`, `drum_kits.json`, `control_*.json`, `fmx_algorithms.json` | reference lists extracted from the Data List |
+| `tools/pfm.py` | read / write / decode / encode `.pfm`; `probe`, `validate`, `roundtrip`, `dump` |
+| `tools/syx.py` | bulk dump `.syx` ↔ `.pfm` (`import`, `export`, `info`) |
+| `tools/build_performance.py` | JSON spec → `.pfm` / `.syx` starting from Yamaha's init templates |
+| `tools/install.py` | add / list / remove performances in the plugin's User bank |
+| `tools/corpus_stats.py` | sound-design statistics over a folder of performances |
+| `tools/parse_datalist_midi.py`, `tools/gen_param_docs.py` | rebuild the tables/docs from the Data List PDF |
+| `examples/*.json` | example build specs (AN-X bass; AWM2 pad + FM-X EP) |
+
+Source documents: Yamaha *MONTAGE M Data List* (MW-H0, OS 3.0),
+https://data.yamaha.com/files/download/other_assets/7/2172427/MONTAGE-M_data_list_En_H0.pdf
+(not stored in the repo). Factory performances: the ESP plugin bundle (see `docs/pfm-format.md`).
+
+Quick start:
+
+```
+python3 tools/pfm.py dump "/Library/Audio/Plug-Ins/Components/Expanded Softsynth Plugin for MONTAGE M.component/Contents/Resources/contents/performance/3F027A-Performance.pfm" | less
+python3 tools/build_performance.py examples/anx-bass.json /tmp/bass.pfm
+python3 tools/install.py add /tmp/bass.pfm          # close the plugin/DAW first
+python3 tools/build_performance.py examples/anx-bass.json /tmp/bass.syx   # for hardware
+```
+
+---
+
 # Yamaha MONTAGE M — User Arpeggio (`.arp`) File Format
 
 This file is an absolute mess because I had Claude generate it as it reverse engineered the firmware and arp files and we tested how different manually written arps behaved. The goal here was to build an arp for Space Song by Beach House. That arp oscillates up exactly 8 notes whether I was holding down 2 or 3. The built in Oct1-4 arps don't limit to 8 notes, they'll oscillate through their defined number of octaves, and I couldn't find anything in the presets that worked nor could I record one that worked. 

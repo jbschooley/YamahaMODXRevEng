@@ -1,0 +1,683 @@
+{
+ "_meta": {
+  "source": "MONTAGE M Data List (montage_m_dl_H0.pdf, 'For firmware version 3.01 and later')",
+  "source_pages": "27",
+  "list": "Performance Category List",
+  "notes": [
+   "Main category numbers 0-15 follow the row order of the printed table; 16 = 'No Assign' (NoAsg), matching the MIDI 'Performance Main Category' / 'Part Main Category' parameter range 0-16 (default 16).",
+   "Sub category numbers follow the printed column order within each main-category row (0 = first column). The MIDI Data Table gives 'Performance Sub Category' / 'Part Sub Category' a range of 0-7 with default 0 printed as '--', but the printed table has 9 columns for most rows (8 for Bass and Drum / Perc, which have one fewer specific sub category). The mapping of the trailing 'No Assign' column onto that 0-7 range is therefore UNVERIFIED from this document; the factory Performance List never uses 'No Assign' as a sub category.",
+   "The last four named sub categories (Rock/Pop, R&B/Hip Hop, Electronic, Jazz/World) are common to every main category."
+  ]
+ },
+ "main_categories": [
+  {
+   "number": 0,
+   "name": "Piano",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Acoustic"
+    },
+    {
+     "number": 1,
+     "name": "Layer"
+    },
+    {
+     "number": 2,
+     "name": "Modern"
+    },
+    {
+     "number": 3,
+     "name": "Vintage"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 1,
+   "name": "Keyboard",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Electric Piano"
+    },
+    {
+     "number": 1,
+     "name": "FM Piano"
+    },
+    {
+     "number": 2,
+     "name": "Clavi"
+    },
+    {
+     "number": 3,
+     "name": "Synth"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 2,
+   "name": "Organ",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Tone Wheel"
+    },
+    {
+     "number": 1,
+     "name": "Combo"
+    },
+    {
+     "number": 2,
+     "name": "Pipe"
+    },
+    {
+     "number": 3,
+     "name": "Synth"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 3,
+   "name": "Guitar",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Acoustic"
+    },
+    {
+     "number": 1,
+     "name": "Electric Clean"
+    },
+    {
+     "number": 2,
+     "name": "Distortion"
+    },
+    {
+     "number": 3,
+     "name": "Synth"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 4,
+   "name": "Bass",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Acoustic"
+    },
+    {
+     "number": 1,
+     "name": "Electric"
+    },
+    {
+     "number": 2,
+     "name": "Synth"
+    },
+    {
+     "number": 3,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 4,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 5,
+     "name": "Electronic"
+    },
+    {
+     "number": 6,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 7,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 5,
+   "name": "Strings",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Solo"
+    },
+    {
+     "number": 1,
+     "name": "Ensemble"
+    },
+    {
+     "number": 2,
+     "name": "Pizzicato"
+    },
+    {
+     "number": 3,
+     "name": "Synth"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 6,
+   "name": "Brass",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Solo"
+    },
+    {
+     "number": 1,
+     "name": "Ensemble"
+    },
+    {
+     "number": 2,
+     "name": "Orchestra"
+    },
+    {
+     "number": 3,
+     "name": "Synth"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 7,
+   "name": "Woodwind",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Saxophone"
+    },
+    {
+     "number": 1,
+     "name": "Flute"
+    },
+    {
+     "number": 2,
+     "name": "Woodwind"
+    },
+    {
+     "number": 3,
+     "name": "Reed / Pipe"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 8,
+   "name": "Syn Lead",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Analog"
+    },
+    {
+     "number": 1,
+     "name": "Digital"
+    },
+    {
+     "number": 2,
+     "name": "Hip Hop"
+    },
+    {
+     "number": 3,
+     "name": "Dance"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 9,
+   "name": "Pad/Choir",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Analog"
+    },
+    {
+     "number": 1,
+     "name": "Warm"
+    },
+    {
+     "number": 2,
+     "name": "Bright"
+    },
+    {
+     "number": 3,
+     "name": "Choir"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 10,
+   "name": "Syn Comp",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Analog"
+    },
+    {
+     "number": 1,
+     "name": "Digital"
+    },
+    {
+     "number": 2,
+     "name": "Decay"
+    },
+    {
+     "number": 3,
+     "name": "Hook"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 11,
+   "name": "Chromatic Perc",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Mallet"
+    },
+    {
+     "number": 1,
+     "name": "Bell"
+    },
+    {
+     "number": 2,
+     "name": "Synth Bell"
+    },
+    {
+     "number": 3,
+     "name": "Pitched Drum"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 12,
+   "name": "Drum / Perc",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Drums"
+    },
+    {
+     "number": 1,
+     "name": "Percussion"
+    },
+    {
+     "number": 2,
+     "name": "Synth"
+    },
+    {
+     "number": 3,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 4,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 5,
+     "name": "Electronic"
+    },
+    {
+     "number": 6,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 7,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 13,
+   "name": "Sound FX",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Moving"
+    },
+    {
+     "number": 1,
+     "name": "Ambient"
+    },
+    {
+     "number": 2,
+     "name": "Nature"
+    },
+    {
+     "number": 3,
+     "name": "Sci-Fi"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 14,
+   "name": "Musical FX",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Moving"
+    },
+    {
+     "number": 1,
+     "name": "Ambient"
+    },
+    {
+     "number": 2,
+     "name": "Sweep"
+    },
+    {
+     "number": 3,
+     "name": "Hit"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 15,
+   "name": "Ethnic",
+   "sub_categories": [
+    {
+     "number": 0,
+     "name": "Bowed"
+    },
+    {
+     "number": 1,
+     "name": "Plucked"
+    },
+    {
+     "number": 2,
+     "name": "Struck"
+    },
+    {
+     "number": 3,
+     "name": "Blown"
+    },
+    {
+     "number": 4,
+     "name": "Rock/Pop"
+    },
+    {
+     "number": 5,
+     "name": "R&B/Hip Hop"
+    },
+    {
+     "number": 6,
+     "name": "Electronic"
+    },
+    {
+     "number": 7,
+     "name": "Jazz/World"
+    },
+    {
+     "number": 8,
+     "name": "No Assign"
+    }
+   ]
+  },
+  {
+   "number": 16,
+   "name": "No Assign",
+   "sub_categories": []
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Test Pad + EP", "category": ["Pad/Choir", "Analog"], "tempo": 90,
+  "reverb": {"type": "HD HALL", "params": {"1": 60}},
+  "variation": {"type": "G CHORUS"},
+  "master_fx": {"type": "MULTI BAND COMP", "on": true},
+  "superknob": {"knob_names": ["Cutoff", "Reso", "Attack", "Release", "Rev", "Var", "Pan", "Level"], "links": [1,1,1,1,0,0,0,0]},
+  "controllers": [{"source": "AsgnKnob 1", "dest": "Part 1 Assign 1", "ratio": 64}],
+  "parts": [
+    {"engine": "AWM2", "name": "Saw Pad", "category": ["Pad/Choir", "Analog"], "volume": 96, "reverb_send": 40, "variation_send": 30,
+     "elements": [
+       {"wave": "Fat Saw St", "filter": {"Filter Type": 4, "Filter Cutoff Frequency": 500, "Filter Resonance/ Width": 40, "FEG Depth": 90}, "amp": {"AEG Attack Time": 70, "AEG Release Time": 90}},
+       {"wave": "PWM Strings St", "osc": {"Element Pan": 40}, "pitch": {"Fine Tune": 70}, "amp": {"AEG Attack Time": 80}}
+     ],
+     "ins_a": {"type": "VCM EQ 501"},
+     "controllers": [{"source": "Modulation Wheel", "dest": "Cutoff", "ratio": 48}, {"source": "AsgnKnob 1", "dest": "Cutoff", "ratio": 64, "polarity": 1}]
+    },
+    {"engine": "FM-X", "name": "Tine EP", "category": ["Keyboard", "FM Piano"], "volume": 90, "note_range": ["C1", "G8"],
+     "fmx": {"common": {"Algorithm Number": 12}, "op": [{"Tune Coarse": 1, "Operator Level": 99}, {"Tune Coarse": 14, "Operator Level": 60}]},
+     "ins_b": {"type": "TEMPO CROSS DELAY"}
+    }
+  ]
+}

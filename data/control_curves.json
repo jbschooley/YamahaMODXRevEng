@@ -1,0 +1,199 @@
+{
+ "title": "MONTAGE M controller curve / polarity / ratio enumerations",
+ "source": "MONTAGE M Data List (montage_m_dl_H0.pdf, Yamaha), PDF page index == printed page number for these sections",
+ "source_pages": [
+  228,
+  238,
+  244,
+  246
+ ],
+ "important_note": "The Control List section itself (pp.198-207) contains NO curve, polarity or ratio tables; it only lists Sources and Destinations. The enumerations below are taken from the Controller Set parameter definitions in the MIDI Data Table (Common/AD Controller Box p.238, Key Controller Box p.244, Part Controller Box p.246) and the Curve Edit Buffer / user-curve definition on p.228. Names of the 18 preset curve shapes are NOT printed anywhere in the Data List (they are in the Reference Manual), so they are given as null.",
+ "controller_set_fields": [
+  {
+   "name": "Controller Set Switch",
+   "offset_hex": "00",
+   "size": 2,
+   "values": {
+    "0": "Off",
+    "1": "On"
+   },
+   "default_hex": "00 00"
+  },
+  {
+   "name": "Controller Set Source",
+   "offset_hex": "02",
+   "size": 2,
+   "range": {
+    "part_box": "0-39",
+    "common_ad_box": "8-15, 18-39"
+   },
+   "reference": "control_sources.json",
+   "default_hex": "00 01 (Part) / 00 08 (Common/AD)"
+  },
+  {
+   "name": "Controller Set Destination",
+   "offset_hex": "04",
+   "size": 2,
+   "range": {
+    "part_box": "1-413",
+    "common_ad_box": "1-393",
+    "key_controller_box": "1-58"
+   },
+   "reference": "control_destinations.json",
+   "default_hex": "00 01"
+  },
+  {
+   "name": "Controller Set Curve Bank",
+   "offset_hex": "06",
+   "size": 2,
+   "range": "0-25",
+   "values": {
+    "0": "Preset",
+    "1": "User",
+    "2-25": "Library1 - Library24 (2=Library1 ... 25=Library24 as printed: '2 = Library1, - 17=Library16, - 25=Library24')"
+   },
+   "default_hex": "00 00"
+  },
+  {
+   "name": "Controller Set Curve Type",
+   "offset_hex": "08",
+   "size": 2,
+   "range": "0-31 (0-17 when Bank is set to Preset)",
+   "preset_curve_names": null,
+   "note": "Preset bank has 18 curve types (0-17); User/Library banks have 32 slots (0-31). Names not given in the Data List.",
+   "default_hex": "00 00"
+  },
+  {
+   "name": "Controller Set Curve Parameter 1",
+   "offset_hex": "0A",
+   "size": 2,
+   "range": "0-127",
+   "default_hex": "00 05",
+   "note": "Fixed to 0 except when Bank is set to Preset."
+  },
+  {
+   "name": "Controller Set Curve Parameter 2",
+   "offset_hex": "0C",
+   "size": 2,
+   "range": "0-127",
+   "default_hex": "00 00",
+   "note": "Fixed to 0 except when Bank is set to Preset."
+  },
+  {
+   "name": "Controller Set Polarity",
+   "offset_hex": "0E",
+   "size": 2,
+   "values": {
+    "0": "Unipolar",
+    "1": "Bipolar"
+   },
+   "default_hex": "00 00"
+  },
+  {
+   "name": "Controller Set Ratio",
+   "offset_hex": "10",
+   "size": 2,
+   "range": "-128 - +127",
+   "data_range_hex": "00 00 - 01 7F",
+   "default_hex": "01 40",
+   "note": "2-byte 7-bit value 0-255 mapped to -128..+127; the printed default 01 40 (=192) therefore corresponds to +64 if the mapping is value-128 (inference, not stated in the PDF)."
+  }
+ ],
+ "box_layouts": {
+  "common_ad_controller_box": {
+   "address": "06 05 bb 00",
+   "bb": "0-31 (Box 1-32)",
+   "total_size": 18,
+   "source_page": 238
+  },
+  "part_controller_box": {
+   "address": "1p 05 bb 00",
+   "p": "Part 0-15",
+   "bb": "Box 1-32",
+   "total_size": 18,
+   "source_page": 246
+  },
+  "key_controller_box": {
+   "address": "1p 00 09 00",
+   "sets": 4,
+   "set_stride_hex": "10",
+   "total_size": 64,
+   "source_page": 244,
+   "fields_per_set": [
+    "Switch",
+    "Destination (1-58)",
+    "Curve Bank",
+    "Curve Type",
+    "Curve Parameter 1",
+    "Curve Parameter 2",
+    "Polarity",
+    "Ratio"
+   ],
+   "note": "No Source field: the Key Controller Box is keyed by note (key-follow style) rather than by a controller source."
+  }
+ },
+ "user_curve_definition": {
+  "description": "Curve Edit Buffer / user curve data block (address 01 01 nn 00 in the bulk map on p.228): 8 breakpoints of input/output pairs plus an interpolation type.",
+  "source_page": 228,
+  "fields": [
+   {
+    "name": "Curve Input 1-8",
+    "offsets_hex": "00,02,...,0E",
+    "size": 2,
+    "range": "Input n: (n-1) - (1016+n) i.e. 0..1017 for 1, 7..1023 for 8; Input 1 fixed to 0, Input 8 fixed to 07 7F in Linear mode",
+    "defaults_hex": [
+     "00 00",
+     "01 12",
+     "02 24",
+     "03 36",
+     "04 48",
+     "05 5A",
+     "06 6C",
+     "07 7F"
+    ]
+   },
+   {
+    "name": "Curve Output 1-8",
+    "offsets_hex": "10,12,...,1E",
+    "size": 2,
+    "range": "0-1023",
+    "defaults_hex": [
+     "00 00",
+     "01 12",
+     "02 24",
+     "03 36",
+     "04 48",
+     "05 5A",
+     "06 6C",
+     "07 7F"
+    ]
+   },
+   {
+    "name": "Curve Type",
+    "offset_hex": "20",
+    "size": 2,
+    "values": {
+     "0": "Linear",
+     "1": "Step"
+    },
+    "default_hex": "00 00"
+   }
+  ],
+  "total_size": 34
+ },
+ "other_polarity_enums": [
+  {
+   "name": "Motion Seq Lane Polarity (Part lane, AD lane, Super Knob lane)",
+   "values": {
+    "0": "Unipolar",
+    "1": "Bipolar"
+   },
+   "source_pages": [
+    236,
+    238,
+    246
+   ],
+   "reset_all_controllers_note": "MIDI Data Format p.214: RESET ALL CONTROLLERS sets Motion Seq Lanes 1-4 to 0 (minimum when Polarity is Unipolar, center when Bipolar)."
+  }
+ ]
+}

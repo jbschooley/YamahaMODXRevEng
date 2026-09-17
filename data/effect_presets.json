@@ -1,0 +1,3897 @@
+{
+ "_meta": {
+  "source": "MONTAGE M Data List (montage_m_dl_H0.pdf)",
+  "section": "Effect Preset List",
+  "source_pages": [
+   172,
+   173,
+   174,
+   175
+  ],
+  "type_count": 104,
+  "preset_count": 657,
+  "notes": [
+   "Only preset names are printed; the Data List does not print preset parameter values.",
+   "preset_number is the 0-based position in the printed list. The MIDI \"Preset Number\" parameter that follows each Type parameter (e.g. Reverb Preset Number, Variation Preset Number) is assumed to index this order, but the PDF does not state that explicitly (unverified).",
+   "type_as_printed keeps the Preset List spelling (e.g. \"U.S. Combo\", \"Multi-band Comp\", \"Beat Repeat (even)\"); effect_type is the Effect Type List name."
+  ]
+ },
+ "effect_types": [
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "HD Hall",
+   "effect_type": "HD HALL",
+   "type_hex": "01 03",
+   "type_number": 131,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Large Hall"
+    },
+    {
+     "preset_number": 1,
+     "name": "Medium Hall"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright Hall"
+    },
+    {
+     "preset_number": 3,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 4,
+     "name": "Small"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "REV-X Hall",
+   "effect_type": "REV-X HALL",
+   "type_hex": "01 00",
+   "type_number": 128,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Small Hall"
+    },
+    {
+     "preset_number": 2,
+     "name": "Clean"
+    },
+    {
+     "preset_number": 3,
+     "name": "Church"
+    },
+    {
+     "preset_number": 4,
+     "name": "Bright Hall"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "R3 Hall",
+   "effect_type": "R3 HALL",
+   "type_hex": "01 01",
+   "type_number": 129,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Large Hall"
+    },
+    {
+     "preset_number": 2,
+     "name": "Backstage"
+    },
+    {
+     "preset_number": 3,
+     "name": "Ballad"
+    },
+    {
+     "preset_number": 4,
+     "name": "Light"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "SPX Hall",
+   "effect_type": "SPX HALL",
+   "type_hex": "01 02",
+   "type_number": 130,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Large Hall"
+    },
+    {
+     "preset_number": 2,
+     "name": "Backstage"
+    },
+    {
+     "preset_number": 3,
+     "name": "Light"
+    },
+    {
+     "preset_number": 4,
+     "name": "Gymnasium"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "HD Room",
+   "effect_type": "HD ROOM",
+   "type_hex": "01 13",
+   "type_number": 147,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Small"
+    },
+    {
+     "preset_number": 1,
+     "name": "Medium"
+    },
+    {
+     "preset_number": 2,
+     "name": "Large"
+    },
+    {
+     "preset_number": 3,
+     "name": "Presence"
+    },
+    {
+     "preset_number": 4,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 5,
+     "name": "Open"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "REV-X Room",
+   "effect_type": "REV-X ROOM",
+   "type_hex": "01 10",
+   "type_number": 144,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Basement"
+    },
+    {
+     "preset_number": 2,
+     "name": "Garage"
+    },
+    {
+     "preset_number": 3,
+     "name": "Bedroom"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "R3 Room",
+   "effect_type": "R3 ROOM",
+   "type_hex": "01 11",
+   "type_number": 145,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Open"
+    },
+    {
+     "preset_number": 2,
+     "name": "Wide"
+    },
+    {
+     "preset_number": 3,
+     "name": "Tight"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "SPX Room",
+   "effect_type": "SPX ROOM",
+   "type_hex": "01 12",
+   "type_number": 146,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Open"
+    },
+    {
+     "preset_number": 2,
+     "name": "Wide"
+    },
+    {
+     "preset_number": 3,
+     "name": "Tight"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "HD Plate",
+   "effect_type": "HD PLATE",
+   "type_hex": "01 21",
+   "type_number": 161,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Large Plate"
+    },
+    {
+     "preset_number": 1,
+     "name": "Medium Plate"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright Plate"
+    },
+    {
+     "preset_number": 3,
+     "name": "Warm Plate"
+    },
+    {
+     "preset_number": 4,
+     "name": "Rattle Plate"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "R3 Plate",
+   "effect_type": "R3 PLATE",
+   "type_hex": "01 20",
+   "type_number": 160,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Bright Vocal"
+    },
+    {
+     "preset_number": 2,
+     "name": "Smooth Vocal"
+    },
+    {
+     "preset_number": 3,
+     "name": "Short Bright"
+    },
+    {
+     "preset_number": 4,
+     "name": "Metal Splash"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "SPX Stage",
+   "effect_type": "SPX STAGE",
+   "type_hex": "01 30",
+   "type_number": 176,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Small"
+    },
+    {
+     "preset_number": 2,
+     "name": "Large"
+    },
+    {
+     "preset_number": 3,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 4,
+     "name": "Presence"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "Space Simulator",
+   "effect_type": "SPACE SIMULATOR",
+   "type_hex": "01 40",
+   "type_number": 192,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Tunnel"
+    },
+    {
+     "preset_number": 1,
+     "name": "Basement"
+    },
+    {
+     "preset_number": 2,
+     "name": "Canyon"
+    },
+    {
+     "preset_number": 3,
+     "name": "White Room"
+    },
+    {
+     "preset_number": 4,
+     "name": "Small Room"
+    },
+    {
+     "preset_number": 5,
+     "name": "Live Room"
+    },
+    {
+     "preset_number": 6,
+     "name": "Three Walls"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "Shimmer Reverb",
+   "effect_type": "SHIMMER REVERB",
+   "type_hex": "01 60",
+   "type_number": 224,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Ambient"
+    },
+    {
+     "preset_number": 2,
+     "name": "AM"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mod Reverb"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "Gated Reverb",
+   "effect_type": "GATED REVERB",
+   "type_hex": "01 50",
+   "type_number": 208,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Gated Reverb 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Gated Reverb 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Gate Delay 1"
+    },
+    {
+     "preset_number": 3,
+     "name": "Gate Delay 2"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Reverb",
+   "type_as_printed": "Reverse Reverb",
+   "effect_type": "REVERSE REVERB",
+   "type_hex": "01 58",
+   "type_number": 216,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Long"
+    },
+    {
+     "preset_number": 2,
+     "name": "Short"
+    },
+    {
+     "preset_number": 3,
+     "name": "Rvs Delay 1"
+    },
+    {
+     "preset_number": 4,
+     "name": "Rvs Delay 2"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Cross Delay",
+   "effect_type": "CROSS DELAY",
+   "type_hex": "02 00",
+   "type_number": 256,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Short"
+    },
+    {
+     "preset_number": 2,
+     "name": "Long"
+    },
+    {
+     "preset_number": 3,
+     "name": "Very Long"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Tempo Cross Delay",
+   "effect_type": "TEMPO CROSS DELAY",
+   "type_hex": "02 10",
+   "type_number": 272,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/8 & 1/32D"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/16 Echo"
+    },
+    {
+     "preset_number": 2,
+     "name": "1/8T & 1/4T"
+    },
+    {
+     "preset_number": 3,
+     "name": "1/16T Echo"
+    },
+    {
+     "preset_number": 4,
+     "name": "1/4 Echo"
+    },
+    {
+     "preset_number": 5,
+     "name": "Dotted 1/8 Echo"
+    },
+    {
+     "preset_number": 6,
+     "name": "1/8 Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Triplet Echo"
+    },
+    {
+     "preset_number": 8,
+     "name": "1/2 Echo"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Tempo Delay Mono",
+   "effect_type": "TEMPO DELAY MONO",
+   "type_hex": "02 20",
+   "type_number": 288,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/4T L/R Diff"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/8T L/R Diff"
+    },
+    {
+     "preset_number": 2,
+     "name": "1/4 Echo"
+    },
+    {
+     "preset_number": 3,
+     "name": "1/4 Mono"
+    },
+    {
+     "preset_number": 4,
+     "name": "Dotted 1/8 Echo"
+    },
+    {
+     "preset_number": 5,
+     "name": "1/8 Echo"
+    },
+    {
+     "preset_number": 6,
+     "name": "Dotted 1/8 Mono"
+    },
+    {
+     "preset_number": 7,
+     "name": "1/8 Mono"
+    },
+    {
+     "preset_number": 8,
+     "name": "Triplet Echo"
+    },
+    {
+     "preset_number": 9,
+     "name": "Triplet Mono"
+    },
+    {
+     "preset_number": 10,
+     "name": "Analog Delay"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Tempo Delay Stereo",
+   "effect_type": "TEMPO DELAY STEREO",
+   "type_hex": "02 28",
+   "type_number": 296,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/4T L/R Diff"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/8T L/R Diff"
+    },
+    {
+     "preset_number": 2,
+     "name": "1/4 Echo"
+    },
+    {
+     "preset_number": 3,
+     "name": "Dotted 1/8 Echo"
+    },
+    {
+     "preset_number": 4,
+     "name": "1/8 Echo"
+    },
+    {
+     "preset_number": 5,
+     "name": "Triplet Echo"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Control Delay",
+   "effect_type": "CONTROL DELAY",
+   "type_hex": "02 30",
+   "type_number": 304,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Transition Slow"
+    },
+    {
+     "preset_number": 2,
+     "name": "Transition Fast"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Delay LR",
+   "effect_type": "DELAY LR",
+   "type_hex": "02 40",
+   "type_number": 320,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Doubling"
+    },
+    {
+     "preset_number": 2,
+     "name": "Short"
+    },
+    {
+     "preset_number": 3,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 4,
+     "name": "Long"
+    },
+    {
+     "preset_number": 5,
+     "name": "Very Long"
+    },
+    {
+     "preset_number": 6,
+     "name": "Analog Delay"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Delay LCR",
+   "effect_type": "DELAY LCR",
+   "type_hex": "02 50",
+   "type_number": 336,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Bright"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bounce"
+    },
+    {
+     "preset_number": 3,
+     "name": "Analog Delay"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Analog Delay Retro",
+   "effect_type": "ANALOG DELAY RETRO",
+   "type_hex": "02 60",
+   "type_number": 352,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Mellow"
+    },
+    {
+     "preset_number": 1,
+     "name": "Magical Dawn"
+    },
+    {
+     "preset_number": 2,
+     "name": "Reel to Reel"
+    },
+    {
+     "preset_number": 3,
+     "name": "Bright Dub"
+    },
+    {
+     "preset_number": 4,
+     "name": "Magical Dusk"
+    },
+    {
+     "preset_number": 5,
+     "name": "Deep"
+    },
+    {
+     "preset_number": 6,
+     "name": "Lo-Fi Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Oil"
+    },
+    {
+     "preset_number": 8,
+     "name": "Dark Room"
+    },
+    {
+     "preset_number": 9,
+     "name": "Smokey Dub"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Delay",
+   "type_as_printed": "Analog Delay Modern",
+   "effect_type": "ANALOG DELAY MODERN",
+   "type_hex": "02 68",
+   "type_number": 360,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Urban"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft Rock"
+    },
+    {
+     "preset_number": 2,
+     "name": "Dub Long"
+    },
+    {
+     "preset_number": 3,
+     "name": "Bucket Rev"
+    },
+    {
+     "preset_number": 4,
+     "name": "Clear Black"
+    },
+    {
+     "preset_number": 5,
+     "name": "Dub Short"
+    },
+    {
+     "preset_number": 6,
+     "name": "Lo-Fi Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Dark Room"
+    },
+    {
+     "preset_number": 8,
+     "name": "New Wave"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "G Chorus",
+   "effect_type": "G CHORUS",
+   "type_hex": "03 00",
+   "type_number": 384,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mist"
+    },
+    {
+     "preset_number": 4,
+     "name": "Bright"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "2 Modulator",
+   "effect_type": "2 MODULATOR",
+   "type_hex": "03 10",
+   "type_number": 400,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mist"
+    },
+    {
+     "preset_number": 4,
+     "name": "Multi"
+    },
+    {
+     "preset_number": 5,
+     "name": "Panning Mod"
+    },
+    {
+     "preset_number": 6,
+     "name": "Vibrator"
+    },
+    {
+     "preset_number": 7,
+     "name": "Wonder"
+    },
+    {
+     "preset_number": 8,
+     "name": "Shimmer"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "SPX Chorus",
+   "effect_type": "SPX CHORUS",
+   "type_hex": "03 20",
+   "type_number": 416,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep"
+    },
+    {
+     "preset_number": 3,
+     "name": "Slow"
+    },
+    {
+     "preset_number": 4,
+     "name": "Flangy"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "Symphonic",
+   "effect_type": "SYMPHONIC",
+   "type_hex": "03 30",
+   "type_number": 432,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep"
+    },
+    {
+     "preset_number": 3,
+     "name": "Slow"
+    },
+    {
+     "preset_number": 4,
+     "name": "Analog"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "Ensemble Detune",
+   "effect_type": "ENSEMBLE DETUNE",
+   "type_hex": "03 40",
+   "type_number": 448,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft Wide"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep Wide"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stereo Sim"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Chorus",
+   "type_as_printed": "GS1 Ensemble & Tremolo",
+   "effect_type": "GS1 ENSEMBLE & TREMOLO",
+   "type_hex": "03 50",
+   "type_number": 464,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Ens with Trm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Mono"
+    },
+    {
+     "preset_number": 3,
+     "name": "Chorus"
+    }
+   ],
+   "source_pages": [
+    172
+   ]
+  },
+  {
+   "category_as_printed": "Flanger",
+   "type_as_printed": "VCM Flanger",
+   "effect_type": "VCM FLANGER",
+   "type_hex": "04 00",
+   "type_number": 512,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Jet"
+    },
+    {
+     "preset_number": 2,
+     "name": "Deep Mod 1"
+    },
+    {
+     "preset_number": 3,
+     "name": "Deep Mod 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Mad Mod"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Flanger",
+   "type_as_printed": "Classic Flanger",
+   "effect_type": "CLASSIC FLANGER",
+   "type_hex": "04 10",
+   "type_number": 528,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Flange Chorus"
+    },
+    {
+     "preset_number": 2,
+     "name": "Psychedelic"
+    },
+    {
+     "preset_number": 3,
+     "name": "Jet"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Flanger",
+   "type_as_printed": "Tempo Flanger",
+   "effect_type": "TEMPO FLANGER",
+   "type_hex": "04 20",
+   "type_number": 544,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Deep Mod"
+    },
+    {
+     "preset_number": 1,
+     "name": "Flange Chorus"
+    },
+    {
+     "preset_number": 2,
+     "name": "Metallic"
+    },
+    {
+     "preset_number": 3,
+     "name": "Psychedelic"
+    },
+    {
+     "preset_number": 4,
+     "name": "Jet"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Flanger",
+   "type_as_printed": "Dynamic Flanger",
+   "effect_type": "DYNAMIC FLANGER",
+   "type_hex": "04 30",
+   "type_number": 560,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Follow"
+    },
+    {
+     "preset_number": 1,
+     "name": "Reverse"
+    },
+    {
+     "preset_number": 2,
+     "name": "Distorted"
+    },
+    {
+     "preset_number": 3,
+     "name": "Sync"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Flanger",
+   "type_as_printed": "Control Flanger",
+   "effect_type": "CONTROL FLANGER",
+   "type_hex": "04 08",
+   "type_number": 520,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Comb 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Comb 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Comb 3"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Phaser",
+   "type_as_printed": "VCM Phaser Mono",
+   "effect_type": "VCM PHASER MONO",
+   "type_hex": "05 00",
+   "type_number": 640,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stage 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stage 6"
+    },
+    {
+     "preset_number": 2,
+     "name": "Stage 8"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stage 10"
+    },
+    {
+     "preset_number": 4,
+     "name": "Stage 12"
+    },
+    {
+     "preset_number": 5,
+     "name": "Stage 16"
+    },
+    {
+     "preset_number": 6,
+     "name": "E.Piano"
+    },
+    {
+     "preset_number": 7,
+     "name": "Orange 90"
+    },
+    {
+     "preset_number": 8,
+     "name": "Two Phase"
+    },
+    {
+     "preset_number": 9,
+     "name": "Deep Six"
+    },
+    {
+     "preset_number": 10,
+     "name": "Deep Eight"
+    },
+    {
+     "preset_number": 11,
+     "name": "Lite Eight"
+    },
+    {
+     "preset_number": 12,
+     "name": "Deep Sweeper"
+    },
+    {
+     "preset_number": 13,
+     "name": "Orange 100"
+    },
+    {
+     "preset_number": 14,
+     "name": "Red Twelve"
+    },
+    {
+     "preset_number": 15,
+     "name": "Blue Sixteen"
+    },
+    {
+     "preset_number": 16,
+     "name": "Clavi 1"
+    },
+    {
+     "preset_number": 17,
+     "name": "Clavi 2"
+    },
+    {
+     "preset_number": 18,
+     "name": "E.Guitar 1"
+    },
+    {
+     "preset_number": 19,
+     "name": "E.Guitar 2"
+    },
+    {
+     "preset_number": 20,
+     "name": "E.Guitar 3"
+    },
+    {
+     "preset_number": 21,
+     "name": "Vibrato 1"
+    },
+    {
+     "preset_number": 22,
+     "name": "Vibrato 2"
+    },
+    {
+     "preset_number": 23,
+     "name": "Vibrato 3"
+    },
+    {
+     "preset_number": 24,
+     "name": "Ambience 1"
+    },
+    {
+     "preset_number": 25,
+     "name": "Ambience 2"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Phaser",
+   "type_as_printed": "VCM Phaser Stereo",
+   "effect_type": "VCM PHASER STEREO",
+   "type_hex": "05 10",
+   "type_number": 656,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stage 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stage 6"
+    },
+    {
+     "preset_number": 2,
+     "name": "Stage 8"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stage 10"
+    },
+    {
+     "preset_number": 4,
+     "name": "Deep Sweeper"
+    },
+    {
+     "preset_number": 5,
+     "name": "E.Piano 1"
+    },
+    {
+     "preset_number": 6,
+     "name": "E.Piano 2"
+    },
+    {
+     "preset_number": 7,
+     "name": "Clavi 1"
+    },
+    {
+     "preset_number": 8,
+     "name": "Clavi 2"
+    },
+    {
+     "preset_number": 9,
+     "name": "E.Guitar 1"
+    },
+    {
+     "preset_number": 10,
+     "name": "E.Guitar 2"
+    },
+    {
+     "preset_number": 11,
+     "name": "E.Guitar 3"
+    },
+    {
+     "preset_number": 12,
+     "name": "Deep Six"
+    },
+    {
+     "preset_number": 13,
+     "name": "Deep Eight"
+    },
+    {
+     "preset_number": 14,
+     "name": "Vibrato 1"
+    },
+    {
+     "preset_number": 15,
+     "name": "Vibrato 2"
+    },
+    {
+     "preset_number": 16,
+     "name": "Vibrato 3"
+    },
+    {
+     "preset_number": 17,
+     "name": "Ambience 1"
+    },
+    {
+     "preset_number": 18,
+     "name": "Ambience 2"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Phaser",
+   "type_as_printed": "Tempo Phaser",
+   "effect_type": "TEMPO PHASER",
+   "type_hex": "05 20",
+   "type_number": 672,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stage 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stage 6"
+    },
+    {
+     "preset_number": 2,
+     "name": "Stage 8"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stage 10"
+    },
+    {
+     "preset_number": 4,
+     "name": "Stage 12"
+    },
+    {
+     "preset_number": 5,
+     "name": "Stage 18"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Phaser",
+   "type_as_printed": "Dynamic Phaser",
+   "effect_type": "DYNAMIC PHASER",
+   "type_hex": "05 30",
+   "type_number": 688,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Up"
+    },
+    {
+     "preset_number": 1,
+     "name": "Down"
+    },
+    {
+     "preset_number": 2,
+     "name": "Follow"
+    },
+    {
+     "preset_number": 3,
+     "name": "Reverse"
+    },
+    {
+     "preset_number": 4,
+     "name": "Light"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Phaser",
+   "type_as_printed": "Control Phaser",
+   "effect_type": "CONTROL PHASER",
+   "type_hex": "05 18",
+   "type_number": 664,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stage 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stage 6"
+    },
+    {
+     "preset_number": 2,
+     "name": "Stage 8"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stage 10"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "Auto Pan",
+   "effect_type": "AUTO PAN",
+   "type_hex": "06 00",
+   "type_number": 768,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "E.Piano"
+    },
+    {
+     "preset_number": 1,
+     "name": "Smooth"
+    },
+    {
+     "preset_number": 2,
+     "name": "Oval"
+    },
+    {
+     "preset_number": 3,
+     "name": "Right Turn"
+    },
+    {
+     "preset_number": 4,
+     "name": "Super Slow"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "Tremolo",
+   "effect_type": "TREMOLO",
+   "type_hex": "06 10",
+   "type_number": 784,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 1,
+     "name": "Slow"
+    },
+    {
+     "preset_number": 2,
+     "name": "Super Fast"
+    },
+    {
+     "preset_number": 3,
+     "name": "Stereo Vibrato"
+    },
+    {
+     "preset_number": 4,
+     "name": "Spring"
+    },
+    {
+     "preset_number": 5,
+     "name": "Relax"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "Rotary Speaker 1",
+   "effect_type": "ROTARY SPEAKER 1",
+   "type_hex": "06 20",
+   "type_number": 800,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Horn Mic"
+    },
+    {
+     "preset_number": 2,
+     "name": "Light"
+    },
+    {
+     "preset_number": 3,
+     "name": "Heavy Rotor"
+    },
+    {
+     "preset_number": 4,
+     "name": "Fast First"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "Rotary Speaker 2",
+   "effect_type": "ROTARY SPEAKER 2",
+   "type_hex": "06 30",
+   "type_number": 816,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Clean and Wide"
+    },
+    {
+     "preset_number": 1,
+     "name": "Vintage Mono"
+    },
+    {
+     "preset_number": 2,
+     "name": "Slow and Dirty"
+    },
+    {
+     "preset_number": 3,
+     "name": "Full Drive"
+    },
+    {
+     "preset_number": 4,
+     "name": "Broken Motors"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "VCM Rotary Speaker Classic",
+   "effect_type": "VCM ROTARY SPEAKER CLASSIC",
+   "type_hex": "06 40",
+   "type_number": 832,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "VCM Rotary Speaker Overdrive",
+   "effect_type": "VCM ROTARY SPEAKER OVERDRIVE",
+   "type_hex": "06 41",
+   "type_number": 833,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Tremolo&Rotary",
+   "type_as_printed": "VCM Rotary Speaker Studio",
+   "effect_type": "VCM ROTARY SPEAKER STUDIO",
+   "type_hex": "06 42",
+   "type_number": 834,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Amp Simulator 1",
+   "effect_type": "AMP SIMULATOR 1",
+   "type_hex": "07 00",
+   "type_number": 896,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stack 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stack 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Twin Boost"
+    },
+    {
+     "preset_number": 3,
+     "name": "Old Amp"
+    },
+    {
+     "preset_number": 4,
+     "name": "Transistor"
+    },
+    {
+     "preset_number": 5,
+     "name": "Modern"
+    },
+    {
+     "preset_number": 6,
+     "name": "US-Clean"
+    },
+    {
+     "preset_number": 7,
+     "name": "J-Clean"
+    },
+    {
+     "preset_number": 8,
+     "name": "Fuzz"
+    },
+    {
+     "preset_number": 9,
+     "name": "Small Blues"
+    },
+    {
+     "preset_number": 10,
+     "name": "Buzzy Bottom"
+    },
+    {
+     "preset_number": 11,
+     "name": "Beat Crunch"
+    },
+    {
+     "preset_number": 12,
+     "name": "Beat Drive"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Amp Simulator 2",
+   "effect_type": "AMP SIMULATOR 2",
+   "type_hex": "07 10",
+   "type_number": 912,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Stack 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Stack 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Combo"
+    },
+    {
+     "preset_number": 3,
+     "name": "Crunch"
+    },
+    {
+     "preset_number": 4,
+     "name": "Hi Gain"
+    },
+    {
+     "preset_number": 5,
+     "name": "British"
+    },
+    {
+     "preset_number": 6,
+     "name": "Tube Drive"
+    },
+    {
+     "preset_number": 7,
+     "name": "Tube Clean"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Comp Distortion",
+   "effect_type": "COMP DISTORTION",
+   "type_hex": "07 20",
+   "type_number": 928,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Booster"
+    },
+    {
+     "preset_number": 2,
+     "name": "School Boy"
+    },
+    {
+     "preset_number": 3,
+     "name": "Detroit"
+    },
+    {
+     "preset_number": 4,
+     "name": "Long Lead"
+    },
+    {
+     "preset_number": 5,
+     "name": "80s Clean"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Comp Distortion Delay",
+   "effect_type": "COMP DISTORTION DELAY",
+   "type_hex": "07 30",
+   "type_number": 944,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Hard 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Hard 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Grunge"
+    },
+    {
+     "preset_number": 3,
+     "name": "Voodoo"
+    },
+    {
+     "preset_number": 4,
+     "name": "Texas"
+    },
+    {
+     "preset_number": 5,
+     "name": "Rockabilly"
+    },
+    {
+     "preset_number": 6,
+     "name": "LA Session"
+    },
+    {
+     "preset_number": 7,
+     "name": "Thin Techno"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "U.S. Combo",
+   "effect_type": "US COMBO",
+   "type_hex": "07 40",
+   "type_number": 960,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Twin"
+    },
+    {
+     "preset_number": 1,
+     "name": "Rich Clean"
+    },
+    {
+     "preset_number": 2,
+     "name": "Thin Clean"
+    },
+    {
+     "preset_number": 3,
+     "name": "Crunch"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Jazz Combo",
+   "effect_type": "JAZZ COMBO",
+   "type_hex": "07 41",
+   "type_number": 961,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm Chorus"
+    },
+    {
+     "preset_number": 2,
+     "name": "Vibrato"
+    },
+    {
+     "preset_number": 3,
+     "name": "Keyboard Amp"
+    },
+    {
+     "preset_number": 4,
+     "name": "Kbd Amp Dist 1"
+    },
+    {
+     "preset_number": 5,
+     "name": "Kbd Amp Dist 2"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "U.S. High Gain",
+   "effect_type": "US HIGH GAIN",
+   "type_hex": "07 42",
+   "type_number": 962,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Dirty"
+    },
+    {
+     "preset_number": 1,
+     "name": "Riff"
+    },
+    {
+     "preset_number": 2,
+     "name": "Burn"
+    },
+    {
+     "preset_number": 3,
+     "name": "Solo"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "British Lead",
+   "effect_type": "BRITISH LEAD",
+   "type_hex": "07 43",
+   "type_number": 963,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Dirty"
+    },
+    {
+     "preset_number": 1,
+     "name": "Drive"
+    },
+    {
+     "preset_number": 2,
+     "name": "Gainer"
+    },
+    {
+     "preset_number": 3,
+     "name": "Hard"
+    }
+   ],
+   "source_pages": [
+    173
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Multi FX",
+   "effect_type": "MULTI FX",
+   "type_hex": "07 44",
+   "type_number": 964,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Distortion Solo"
+    },
+    {
+     "preset_number": 1,
+     "name": "Distortion Basic"
+    },
+    {
+     "preset_number": 2,
+     "name": "Overdrive Chorus"
+    },
+    {
+     "preset_number": 3,
+     "name": "Crunch Wah"
+    },
+    {
+     "preset_number": 4,
+     "name": "Oldies Delay"
+    },
+    {
+     "preset_number": 5,
+     "name": "Vintage Echo"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "Small Stereo",
+   "effect_type": "SMALL STEREO",
+   "type_hex": "07 45",
+   "type_number": 965,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Distortion"
+    },
+    {
+     "preset_number": 1,
+     "name": "Overdrive"
+    },
+    {
+     "preset_number": 2,
+     "name": "Vintage Amp"
+    },
+    {
+     "preset_number": 3,
+     "name": "Heavy Dist"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "British Combo",
+   "effect_type": "BRITISH COMBO",
+   "type_hex": "07 46",
+   "type_number": 966,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Classic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Top Boost"
+    },
+    {
+     "preset_number": 2,
+     "name": "Custom"
+    },
+    {
+     "preset_number": 3,
+     "name": "Heavy"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Distortion",
+   "type_as_printed": "British Legend",
+   "effect_type": "BRITISH LEGEND",
+   "type_hex": "07 47",
+   "type_number": 967,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Blues"
+    },
+    {
+     "preset_number": 1,
+     "name": "Heavy 1"
+    },
+    {
+     "preset_number": 2,
+     "name": "Heavy 2"
+    },
+    {
+     "preset_number": 3,
+     "name": "Clean"
+    },
+    {
+     "preset_number": 4,
+     "name": "Dirty Clean"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "VCM Compressor 376",
+   "effect_type": "VCM COMPRESSOR 376",
+   "type_hex": "08 00",
+   "type_number": 1024,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Comp Sustainer"
+    },
+    {
+     "preset_number": 2,
+     "name": "60s Drum Kit"
+    },
+    {
+     "preset_number": 3,
+     "name": "Natural Kick"
+    },
+    {
+     "preset_number": 4,
+     "name": "Old Piano"
+    },
+    {
+     "preset_number": 5,
+     "name": "Valve Tone Bass"
+    },
+    {
+     "preset_number": 6,
+     "name": "Hard Basic"
+    },
+    {
+     "preset_number": 7,
+     "name": "Fast Atk + Boost"
+    },
+    {
+     "preset_number": 8,
+     "name": "Soft Atk + Boost"
+    },
+    {
+     "preset_number": 9,
+     "name": "Attack & Tight"
+    },
+    {
+     "preset_number": 10,
+     "name": "Hard Atk + Boost"
+    },
+    {
+     "preset_number": 11,
+     "name": "Vocal Comp 117x"
+    },
+    {
+     "preset_number": 12,
+     "name": "Unplugged"
+    },
+    {
+     "preset_number": 13,
+     "name": "Attack Comp"
+    },
+    {
+     "preset_number": 14,
+     "name": "Punchy Master"
+    },
+    {
+     "preset_number": 15,
+     "name": "Pinched"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "Classic Compressor",
+   "effect_type": "CLASSIC COMPRESSOR",
+   "type_hex": "08 10",
+   "type_number": 1040,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Attack"
+    },
+    {
+     "preset_number": 2,
+     "name": "For Vintage Keys"
+    },
+    {
+     "preset_number": 3,
+     "name": "Pack Comp"
+    },
+    {
+     "preset_number": 4,
+     "name": "Gate"
+    },
+    {
+     "preset_number": 5,
+     "name": "TightPopRhythm"
+    },
+    {
+     "preset_number": 6,
+     "name": "Cutting Comp"
+    },
+    {
+     "preset_number": 7,
+     "name": "Basic Bass"
+    },
+    {
+     "preset_number": 8,
+     "name": "Old Record Piano"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "Multi-band Comp",
+   "effect_type": "MULTI BAND COMP",
+   "type_hex": "08 20",
+   "type_number": 1056,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Maximizer"
+    },
+    {
+     "preset_number": 2,
+     "name": "Wild"
+    },
+    {
+     "preset_number": 3,
+     "name": "Attacky"
+    },
+    {
+     "preset_number": 4,
+     "name": "Hard"
+    },
+    {
+     "preset_number": 5,
+     "name": "Hip Club"
+    },
+    {
+     "preset_number": 6,
+     "name": "Slap Bass (ch)"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "Uni Comp Down",
+   "effect_type": "UNI COMP DOWN",
+   "type_hex": "08 30",
+   "type_number": 1072,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    },
+    {
+     "preset_number": 3,
+     "name": "Sat Comp"
+    },
+    {
+     "preset_number": 4,
+     "name": "Comp + Hard Clip"
+    },
+    {
+     "preset_number": 5,
+     "name": "Master"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "Uni Comp Up",
+   "effect_type": "UNI COMP UP",
+   "type_hex": "08 38",
+   "type_number": 1080,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    },
+    {
+     "preset_number": 3,
+     "name": "Sat Comp"
+    },
+    {
+     "preset_number": 4,
+     "name": "Comp + Hard Clip"
+    },
+    {
+     "preset_number": 5,
+     "name": "Master"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "Parallel Comp",
+   "effect_type": "PARALLEL COMP",
+   "type_hex": "08 40",
+   "type_number": 1088,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Natural"
+    },
+    {
+     "preset_number": 1,
+     "name": "Rich"
+    },
+    {
+     "preset_number": 2,
+     "name": "Punchy"
+    },
+    {
+     "preset_number": 3,
+     "name": "Electronic"
+    },
+    {
+     "preset_number": 4,
+     "name": "Loud"
+    },
+    {
+     "preset_number": 5,
+     "name": "Natural for Mst"
+    },
+    {
+     "preset_number": 6,
+     "name": "Rich for Master"
+    },
+    {
+     "preset_number": 7,
+     "name": "Punchy for Mst"
+    },
+    {
+     "preset_number": 8,
+     "name": "ElectronicForMst"
+    },
+    {
+     "preset_number": 9,
+     "name": "Loud for Master"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Compressor",
+   "type_as_printed": "M/S EQ Compressor",
+   "effect_type": "M/S EQ COMPRESSOR",
+   "type_hex": "08 50",
+   "type_number": 1104,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Wide Side"
+    },
+    {
+     "preset_number": 1,
+     "name": "Mid Punchy"
+    },
+    {
+     "preset_number": 2,
+     "name": "Natural"
+    },
+    {
+     "preset_number": 3,
+     "name": "Attack"
+    },
+    {
+     "preset_number": 4,
+     "name": "Loud"
+    },
+    {
+     "preset_number": 5,
+     "name": "Comp Sat"
+    },
+    {
+     "preset_number": 6,
+     "name": "Limit Sat"
+    },
+    {
+     "preset_number": 7,
+     "name": "Lo-Fi Limiter"
+    },
+    {
+     "preset_number": 8,
+     "name": "Master Comp"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Wah",
+   "type_as_printed": "VCM Auto Wah",
+   "effect_type": "VCM AUTO WAH",
+   "type_hex": "0A 00",
+   "type_number": 1280,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Clean Mid"
+    },
+    {
+     "preset_number": 1,
+     "name": "Clean High"
+    },
+    {
+     "preset_number": 2,
+     "name": "Clean Low"
+    },
+    {
+     "preset_number": 3,
+     "name": "Clean Bass"
+    },
+    {
+     "preset_number": 4,
+     "name": "Overdrive Mid"
+    },
+    {
+     "preset_number": 5,
+     "name": "Overdrive High"
+    },
+    {
+     "preset_number": 6,
+     "name": "Overdrive Low"
+    },
+    {
+     "preset_number": 7,
+     "name": "Overdrive Bass"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Wah",
+   "type_as_printed": "VCM Touch Wah",
+   "effect_type": "VCM TOUCH WAH",
+   "type_hex": "0A 10",
+   "type_number": 1296,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Clean Mid"
+    },
+    {
+     "preset_number": 1,
+     "name": "Clean High"
+    },
+    {
+     "preset_number": 2,
+     "name": "Clean Low"
+    },
+    {
+     "preset_number": 3,
+     "name": "Clean Bass"
+    },
+    {
+     "preset_number": 4,
+     "name": "Overdrive Mid"
+    },
+    {
+     "preset_number": 5,
+     "name": "Overdrive High"
+    },
+    {
+     "preset_number": 6,
+     "name": "Overdrive Low"
+    },
+    {
+     "preset_number": 7,
+     "name": "Overdrive Bass"
+    },
+    {
+     "preset_number": 8,
+     "name": "Follow"
+    },
+    {
+     "preset_number": 9,
+     "name": "Hi Q"
+    },
+    {
+     "preset_number": 10,
+     "name": "For Bass"
+    },
+    {
+     "preset_number": 11,
+     "name": "Reverse"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Wah",
+   "type_as_printed": "VCM Pedal Wah",
+   "effect_type": "VCM PEDAL WAH",
+   "type_hex": "0A 20",
+   "type_number": 1312,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Clean Mid"
+    },
+    {
+     "preset_number": 1,
+     "name": "Clean High"
+    },
+    {
+     "preset_number": 2,
+     "name": "Clean Low"
+    },
+    {
+     "preset_number": 3,
+     "name": "Clean Bass"
+    },
+    {
+     "preset_number": 4,
+     "name": "Overdrive Mid"
+    },
+    {
+     "preset_number": 5,
+     "name": "Overdrive High"
+    },
+    {
+     "preset_number": 6,
+     "name": "Overdrive Low"
+    },
+    {
+     "preset_number": 7,
+     "name": "Overdrive Bass"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Lo-Fi",
+   "type_as_printed": "Lo-Fi",
+   "effect_type": "LO-FI",
+   "type_hex": "0B 00",
+   "type_number": 1408,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Lo-Fi"
+    },
+    {
+     "preset_number": 1,
+     "name": "Old Phone"
+    },
+    {
+     "preset_number": 2,
+     "name": "Overload"
+    },
+    {
+     "preset_number": 3,
+     "name": "Max Lo-Fi"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Lo-Fi",
+   "type_as_printed": "Noisy",
+   "effect_type": "NOISY",
+   "type_hex": "0B 10",
+   "type_number": 1424,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Nz Drive"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft Nz Tremolo"
+    },
+    {
+     "preset_number": 2,
+     "name": "Nz Rotary 1"
+    },
+    {
+     "preset_number": 3,
+     "name": "Nz Rotary 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Noisy"
+    },
+    {
+     "preset_number": 5,
+     "name": "Tremolo Noise"
+    },
+    {
+     "preset_number": 6,
+     "name": "Fuzz Noise"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Lo-Fi",
+   "type_as_printed": "Digital Turntable",
+   "effect_type": "DIGITAL TURNTABLE",
+   "type_hex": "0B 20",
+   "type_number": 1440,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Digi Nz"
+    },
+    {
+     "preset_number": 1,
+     "name": "78 rpm"
+    },
+    {
+     "preset_number": 2,
+     "name": "45 rpm"
+    },
+    {
+     "preset_number": 3,
+     "name": "331/3 rpm"
+    },
+    {
+     "preset_number": 4,
+     "name": "Old Record 1"
+    },
+    {
+     "preset_number": 5,
+     "name": "Old Record 2"
+    },
+    {
+     "preset_number": 6,
+     "name": "Short Wave Radio"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Lo-Fi",
+   "type_as_printed": "Bit Crusher",
+   "effect_type": "BIT CRUSHER",
+   "type_hex": "0B 30",
+   "type_number": 1456,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Hard"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft"
+    },
+    {
+     "preset_number": 2,
+     "name": "12-bit Sampler"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mid-Side 1"
+    },
+    {
+     "preset_number": 4,
+     "name": "Mid-Side 2"
+    },
+    {
+     "preset_number": 5,
+     "name": "Mid-Side 3"
+    },
+    {
+     "preset_number": 6,
+     "name": "2-bit Dist"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Ring Modulator",
+   "effect_type": "RING MODULATOR",
+   "type_hex": "0C 00",
+   "type_number": 1536,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Slow"
+    },
+    {
+     "preset_number": 2,
+     "name": "Tremolo"
+    },
+    {
+     "preset_number": 3,
+     "name": "Crazy"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "CS Ring Modulator",
+   "effect_type": "CS RING MODULATOR",
+   "type_hex": "0C 08",
+   "type_number": 1544,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Up & Down"
+    },
+    {
+     "preset_number": 1,
+     "name": "Bounce"
+    },
+    {
+     "preset_number": 2,
+     "name": "Oval Tremolo"
+    },
+    {
+     "preset_number": 3,
+     "name": "Tremoriser"
+    },
+    {
+     "preset_number": 4,
+     "name": "Change Tremolo"
+    },
+    {
+     "preset_number": 5,
+     "name": "Stable"
+    },
+    {
+     "preset_number": 6,
+     "name": "Rotator"
+    },
+    {
+     "preset_number": 7,
+     "name": "Under Tone"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Dynamic Ring Modulator",
+   "effect_type": "DYNAMIC RING MODULATOR",
+   "type_hex": "0C 10",
+   "type_number": 1552,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Metallic"
+    },
+    {
+     "preset_number": 2,
+     "name": "Sputter"
+    },
+    {
+     "preset_number": 3,
+     "name": "Sharp Edge"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Dynamic Filter",
+   "effect_type": "DYNAMIC FILTER",
+   "type_hex": "0C 20",
+   "type_number": 1568,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "High Pass"
+    },
+    {
+     "preset_number": 2,
+     "name": "Low Pass"
+    },
+    {
+     "preset_number": 3,
+     "name": "Squish"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Auto Synth",
+   "effect_type": "AUTO SYNTH",
+   "type_hex": "0C 30",
+   "type_number": 1584,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Nz Mod Delay 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Nz Mod Delay 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Nz Mod Delay 3"
+    },
+    {
+     "preset_number": 3,
+     "name": "Nz Mod Delay 4"
+    },
+    {
+     "preset_number": 4,
+     "name": "Echo"
+    },
+    {
+     "preset_number": 5,
+     "name": "Space Walking"
+    },
+    {
+     "preset_number": 6,
+     "name": "Robot Delay"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Spiralizer P",
+   "effect_type": "SPIRALIZER P",
+   "type_hex": "0C 38",
+   "type_number": 1592,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Step 1"
+    },
+    {
+     "preset_number": 2,
+     "name": "Scale"
+    },
+    {
+     "preset_number": 3,
+     "name": "Step 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    174
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Tempo Spiralizer P",
+   "effect_type": "TEMPO SPIRALIZER P",
+   "type_hex": "0C 39",
+   "type_number": 1593,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Step 1"
+    },
+    {
+     "preset_number": 2,
+     "name": "Scale"
+    },
+    {
+     "preset_number": 3,
+     "name": "Step 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Spiralizer F",
+   "effect_type": "SPIRALIZER F",
+   "type_hex": "0C 3A",
+   "type_number": 1594,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Step 1"
+    },
+    {
+     "preset_number": 2,
+     "name": "Scale"
+    },
+    {
+     "preset_number": 3,
+     "name": "Step 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Tempo Spiralizer F",
+   "effect_type": "TEMPO SPIRALIZER F",
+   "type_hex": "0C 3B",
+   "type_number": 1595,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Step 1"
+    },
+    {
+     "preset_number": 2,
+     "name": "Scale"
+    },
+    {
+     "preset_number": 3,
+     "name": "Step 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Isolator",
+   "effect_type": "ISOLATOR",
+   "type_hex": "0C 40",
+   "type_number": 1600,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Lo/Hi Boost"
+    },
+    {
+     "preset_number": 1,
+     "name": "Hi Cut"
+    },
+    {
+     "preset_number": 2,
+     "name": "Lo Only"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mid Only"
+    },
+    {
+     "preset_number": 4,
+     "name": "Lo Cut"
+    },
+    {
+     "preset_number": 5,
+     "name": "Near"
+    },
+    {
+     "preset_number": 6,
+     "name": "Flat"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Slice",
+   "effect_type": "SLICE",
+   "type_hex": "0C 50",
+   "type_number": 1616,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Slice Beat"
+    },
+    {
+     "preset_number": 2,
+     "name": "8th Pan"
+    },
+    {
+     "preset_number": 3,
+     "name": "16th Mute"
+    },
+    {
+     "preset_number": 4,
+     "name": "Rock"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Tech Modulation",
+   "effect_type": "TECH MODULATION",
+   "type_hex": "0C 60",
+   "type_number": 1632,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Mod Chase"
+    },
+    {
+     "preset_number": 1,
+     "name": "Mod Dub"
+    },
+    {
+     "preset_number": 2,
+     "name": "Star Train"
+    },
+    {
+     "preset_number": 3,
+     "name": "Numerator"
+    },
+    {
+     "preset_number": 4,
+     "name": "Active Dist"
+    },
+    {
+     "preset_number": 5,
+     "name": "Astonish"
+    },
+    {
+     "preset_number": 6,
+     "name": "Drift Armor"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Control Filter",
+   "effect_type": "CONTROL FILTER",
+   "type_hex": "0C 28",
+   "type_number": 1576,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "LPF12"
+    },
+    {
+     "preset_number": 1,
+     "name": "LPF18"
+    },
+    {
+     "preset_number": 2,
+     "name": "LPF24"
+    },
+    {
+     "preset_number": 3,
+     "name": "BPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "HPF"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Vinyl Break",
+   "effect_type": "VINYL BREAK",
+   "type_hex": "0C 70",
+   "type_number": 1648,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 1,
+     "name": "Middle"
+    },
+    {
+     "preset_number": 2,
+     "name": "Slow"
+    },
+    {
+     "preset_number": 3,
+     "name": "Vinyl Stop"
+    },
+    {
+     "preset_number": 4,
+     "name": "Power off"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Beat Repeat (even)",
+   "effect_type": "BEAT REPEAT EVEN",
+   "type_hex": "0C 78",
+   "type_number": 1656,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/16 x 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/16 x 4 Rev."
+    },
+    {
+     "preset_number": 2,
+     "name": "Trans Gate"
+    },
+    {
+     "preset_number": 3,
+     "name": "Trans Gate + HPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "Pitch Sweep"
+    },
+    {
+     "preset_number": 5,
+     "name": "PitchSweep+HPF"
+    },
+    {
+     "preset_number": 6,
+     "name": "Slow Attack Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Broken"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Beat Repeat (triplet)",
+   "effect_type": "BEAT REPEAT TRIPLET",
+   "type_hex": "0C 79",
+   "type_number": 1657,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Triplet x 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "Triplet x 4 Rev."
+    },
+    {
+     "preset_number": 2,
+     "name": "Trans Gate"
+    },
+    {
+     "preset_number": 3,
+     "name": "Trans Gate + HPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "Pitch Sweep"
+    },
+    {
+     "preset_number": 5,
+     "name": "PitchSweep+HPF"
+    },
+    {
+     "preset_number": 6,
+     "name": "Slow Attack Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Broken"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Beat Repeat (evn+tri.)",
+   "effect_type": "BEAT REPEAT EVEN+TRIPLET",
+   "type_hex": "0C 7A",
+   "type_number": 1658,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/16 x 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/16 x 4 Rev."
+    },
+    {
+     "preset_number": 2,
+     "name": "Trans Gate"
+    },
+    {
+     "preset_number": 3,
+     "name": "Trans Gate + HPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "Pitch Sweep"
+    },
+    {
+     "preset_number": 5,
+     "name": "PitchSweep+HPF"
+    },
+    {
+     "preset_number": 6,
+     "name": "Slow Attack Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Broken"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Tech",
+   "type_as_printed": "Beat Repeat (free)",
+   "effect_type": "BEAT REPEAT FREE",
+   "type_hex": "0C 7B",
+   "type_number": 1659,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1/16 x 4"
+    },
+    {
+     "preset_number": 1,
+     "name": "1/16 x 4 Rev."
+    },
+    {
+     "preset_number": 2,
+     "name": "Trans Gate"
+    },
+    {
+     "preset_number": 3,
+     "name": "Trans Gate + HPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "Pitch Sweep"
+    },
+    {
+     "preset_number": 5,
+     "name": "PitchSweep+HPF"
+    },
+    {
+     "preset_number": 6,
+     "name": "Slow Atk Echo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Broken"
+    },
+    {
+     "preset_number": 8,
+     "name": "Quintuplet"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "VCM EQ 501",
+   "effect_type": "VCM EQ 501",
+   "type_hex": "0D 00",
+   "type_number": 1664,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Bright"
+    },
+    {
+     "preset_number": 2,
+     "name": "Warm"
+    },
+    {
+     "preset_number": 3,
+     "name": "Lo/Hi Boost"
+    },
+    {
+     "preset_number": 4,
+     "name": "Mid Boost"
+    },
+    {
+     "preset_number": 5,
+     "name": "Loud"
+    },
+    {
+     "preset_number": 6,
+     "name": "Dance SD/BD"
+    },
+    {
+     "preset_number": 7,
+     "name": "Radio Speaker"
+    },
+    {
+     "preset_number": 8,
+     "name": "Flat"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Presence",
+   "effect_type": "PRESENCE",
+   "type_hex": "0D 08",
+   "type_number": 1672,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Natural"
+    },
+    {
+     "preset_number": 1,
+     "name": "Heavy"
+    },
+    {
+     "preset_number": 2,
+     "name": "Bright"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Harmonic Enhancer",
+   "effect_type": "HARMONIC ENHANCER",
+   "type_hex": "0D 10",
+   "type_number": 1680,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Presence"
+    },
+    {
+     "preset_number": 1,
+     "name": "Edge"
+    },
+    {
+     "preset_number": 2,
+     "name": "High Edge"
+    },
+    {
+     "preset_number": 3,
+     "name": "Mid Edge"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Stereophonic Optimizer",
+   "effect_type": "STEREOPHONIC OPTIMIZER",
+   "type_hex": "0D 18",
+   "type_number": 1688,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Focus"
+    },
+    {
+     "preset_number": 1,
+     "name": "Bottom"
+    },
+    {
+     "preset_number": 2,
+     "name": "Top"
+    },
+    {
+     "preset_number": 3,
+     "name": "Center"
+    },
+    {
+     "preset_number": 4,
+     "name": "Acoustic Piano"
+    },
+    {
+     "preset_number": 5,
+     "name": "Drum"
+    },
+    {
+     "preset_number": 6,
+     "name": "EP Tremolo"
+    },
+    {
+     "preset_number": 7,
+     "name": "Organ"
+    },
+    {
+     "preset_number": 8,
+     "name": "Sax"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Talking Modulator",
+   "effect_type": "TALKING MODULATOR",
+   "type_hex": "0D 20",
+   "type_number": 1696,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Wave Folder",
+   "effect_type": "WAVE FOLDER",
+   "type_hex": "0D 28",
+   "type_number": 1704,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Soft 1"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft 2"
+    },
+    {
+     "preset_number": 2,
+     "name": "Hard 1"
+    },
+    {
+     "preset_number": 3,
+     "name": "Hard 2"
+    },
+    {
+     "preset_number": 4,
+     "name": "SEQ+LFO 01"
+    },
+    {
+     "preset_number": 5,
+     "name": "SEQ+LFO 02"
+    },
+    {
+     "preset_number": 6,
+     "name": "SEQ+LFO 03"
+    },
+    {
+     "preset_number": 7,
+     "name": "SEQ+LFO 04"
+    },
+    {
+     "preset_number": 8,
+     "name": "SEQ+LFO 05"
+    },
+    {
+     "preset_number": 9,
+     "name": "SEQ+LFO 06"
+    },
+    {
+     "preset_number": 10,
+     "name": "SEQ+LFO 07"
+    },
+    {
+     "preset_number": 11,
+     "name": "SEQ+LFO 08"
+    },
+    {
+     "preset_number": 12,
+     "name": "SEQ+LFO 09"
+    },
+    {
+     "preset_number": 13,
+     "name": "SEQ+LFO 10"
+    },
+    {
+     "preset_number": 14,
+     "name": "Saturator 1"
+    },
+    {
+     "preset_number": 15,
+     "name": "Saturator 2"
+    },
+    {
+     "preset_number": 16,
+     "name": "Saturator 3"
+    },
+    {
+     "preset_number": 17,
+     "name": "Saturator 4"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "VCM Mini Filter",
+   "effect_type": "VCM MINI FILTER",
+   "type_hex": "0D 29",
+   "type_number": 1705,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1970s LPF"
+    },
+    {
+     "preset_number": 1,
+     "name": "1980s LPF"
+    },
+    {
+     "preset_number": 2,
+     "name": "Modern LPF"
+    },
+    {
+     "preset_number": 3,
+     "name": "1970s HPF"
+    },
+    {
+     "preset_number": 4,
+     "name": "1980s HPF"
+    },
+    {
+     "preset_number": 5,
+     "name": "Modern HPF"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "VCM Mini Booster",
+   "effect_type": "VCM MINI BOOSTER",
+   "type_hex": "0D 2A",
+   "type_number": 1706,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "1970s High Boost"
+    },
+    {
+     "preset_number": 1,
+     "name": "1980s High Boost"
+    },
+    {
+     "preset_number": 2,
+     "name": "ModernHighBoost"
+    },
+    {
+     "preset_number": 3,
+     "name": "1970s Low Boost"
+    },
+    {
+     "preset_number": 4,
+     "name": "1980s Low Boost"
+    },
+    {
+     "preset_number": 5,
+     "name": "Modern LowBoost"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Damper Resonance",
+   "effect_type": "DAMPER RESONANCE",
+   "type_hex": "0D 30",
+   "type_number": 1712,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "String Reso"
+    },
+    {
+     "preset_number": 2,
+     "name": "Short"
+    },
+    {
+     "preset_number": 3,
+     "name": "Long"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Pitch Change",
+   "effect_type": "PITCH CHANGE",
+   "type_hex": "0D 40",
+   "type_number": 1728,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Detune"
+    },
+    {
+     "preset_number": 1,
+     "name": "Oct Echo"
+    },
+    {
+     "preset_number": 2,
+     "name": "Octaver"
+    },
+    {
+     "preset_number": 3,
+     "name": "Plus 4th"
+    },
+    {
+     "preset_number": 4,
+     "name": "Minus 4th"
+    },
+    {
+     "preset_number": 5,
+     "name": "Oval"
+    },
+    {
+     "preset_number": 6,
+     "name": "Step Up"
+    },
+    {
+     "preset_number": 7,
+     "name": "Step Down"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Early Reflection",
+   "effect_type": "EARLY REFLECTION",
+   "type_hex": "0D 50",
+   "type_number": 1744,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Close"
+    },
+    {
+     "preset_number": 1,
+     "name": "Far"
+    },
+    {
+     "preset_number": 2,
+     "name": "Reverse"
+    },
+    {
+     "preset_number": 3,
+     "name": "Gate"
+    },
+    {
+     "preset_number": 4,
+     "name": "70s Gate"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "Vocoder",
+   "effect_type": "VOCODER",
+   "type_hex": "0D 60",
+   "type_number": 1760,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Fast"
+    },
+    {
+     "preset_number": 2,
+     "name": "Slow"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  },
+  {
+   "category_as_printed": "Misc",
+   "type_as_printed": "NoiseGate + Comp + Eq",
+   "effect_type": "NOISE GATE+COMP+EQ",
+   "type_hex": "0D 70",
+   "type_number": 1776,
+   "presets": [
+    {
+     "preset_number": 0,
+     "name": "Basic"
+    },
+    {
+     "preset_number": 1,
+     "name": "Soft Comp"
+    },
+    {
+     "preset_number": 2,
+     "name": "Hard Comp"
+    },
+    {
+     "preset_number": 3,
+     "name": "Limiter"
+    }
+   ],
+   "source_pages": [
+    175
+   ]
+  }
+ ]
+}

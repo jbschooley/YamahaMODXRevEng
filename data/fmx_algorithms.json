@@ -1,0 +1,2622 @@
+{
+ "title": "MONTAGE M FM-X Algorithm Chart (88 algorithms, 8 operators)",
+ "source": "MONTAGE M Data List (montage_m_dl_H0.pdf, Yamaha), PDF page index == printed page number for these sections",
+ "source_pages": [
+  208,
+  209,
+  210,
+  211
+ ],
+ "method": "The chart is purely graphical (pdftotext yields only the numbers). Pages were rendered with pdftoppm at 400 dpi (800 dpi for alg 65) and every cell transcribed by eye. Drawing conventions used: boxes joined by the bottom horizontal output bus are carriers; a line leaving the bottom of a box and entering the top of another (directly or via a horizontal bus) means the upper operator modulates the lower one; the thin rectangular loop beside a box is the feedback path, running from the output of the operator at its lower end back into the input of the operator at its upper end (self-feedback when both are the same box, e.g. alg 13 = 3->3; multi-operator feedback e.g. alg 12 = 5->3, alg 14 = 4->3).",
+ "encoding": {
+  "carriers": "operators whose output goes to the audio bus",
+  "modulators": "map modulator -> list of operators it modulates",
+  "feedback": "from = operator whose output is fed back, to = operator receiving it; self=true when from==to",
+  "ascii": "compact text form: 'mod: a>b,c' lists targets per modulator; 'out' = carriers; 'fb' = feedback path"
+ },
+ "caveats": [
+  "Transcribed visually; every algorithm passed a structural check (each operator is a carrier or a modulator) but individual edges have not been verified against hardware.",
+  "Algorithm 65 has an ambiguous junction (see its 'uncertain' field)."
+ ],
+ "algorithms": [
+  {
+   "number": 1,
+   "carriers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {},
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: (no modulation) | out: 1,2,3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 2,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 3>4 | out: 4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 3,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 3>4 | out: 4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 4,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     4
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>4; 2>3; 3>4 | out: 4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 5,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     4
+    ],
+    "3": [
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>4; 3>4 | out: 4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 6,
+   "carriers": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>4 | out: 2,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 7,
+   "carriers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2,
+     3,
+     4
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2,3,4 | out: 2,3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 8,
+   "carriers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2 | out: 2,3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 9,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 5>6; 7>8 | out: 1,2,6,8 | fb: 3->3"
+  },
+  {
+   "number": 10,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 5>6; 7>8 | out: 1,2,6,8 | fb: 7->7"
+  },
+  {
+   "number": 11,
+   "carriers": [
+    1,
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 6>7; 7>8 | out: 1,2,5,8 | fb: 3->3"
+  },
+  {
+   "number": 12,
+   "carriers": [
+    1,
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 5,
+    "to": 3,
+    "self": false
+   },
+   "ascii": "mod: 3>4; 4>5; 6>7; 7>8 | out: 1,2,5,8 | fb: 5->3"
+  },
+  {
+   "number": 13,
+   "carriers": [
+    1,
+    2,
+    4,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 5>6; 7>8 | out: 1,2,4,6,8 | fb: 3->3"
+  },
+  {
+   "number": 14,
+   "carriers": [
+    1,
+    2,
+    4,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 3,
+    "self": false
+   },
+   "ascii": "mod: 3>4; 5>6; 7>8 | out: 1,2,4,6,8 | fb: 4->3"
+  },
+  {
+   "number": 15,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>6; 5>6; 7>8 | out: 1,2,6,8 | fb: 3->3"
+  },
+  {
+   "number": 16,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 5,
+    "to": 5,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>6; 5>6; 7>8 | out: 1,2,6,8 | fb: 5->5"
+  },
+  {
+   "number": 17,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>6; 5>6; 7>8 | out: 1,2,6,8 | fb: 7->7"
+  },
+  {
+   "number": 18,
+   "carriers": [
+    1,
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 6>8; 7>8 | out: 1,2,5,8 | fb: 3->3"
+  },
+  {
+   "number": 19,
+   "carriers": [
+    1,
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 6>8; 7>8 | out: 1,2,5,8 | fb: 7->7"
+  },
+  {
+   "number": 20,
+   "carriers": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 5>8; 6>8; 7>8 | out: 1,2,4,8 | fb: 3->3"
+  },
+  {
+   "number": 21,
+   "carriers": [
+    1,
+    2,
+    4,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 5,
+    "to": 5,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 5>8; 6>8; 7>8 | out: 1,2,4,8 | fb: 5->5"
+  },
+  {
+   "number": 22,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>6; 7>8 | out: 1,2,6,8 | fb: 3->3"
+  },
+  {
+   "number": 23,
+   "carriers": [
+    1,
+    2,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>6; 7>8 | out: 1,2,6,8 | fb: 7->7"
+  },
+  {
+   "number": 24,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>8; 5>6; 6>8; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 25,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>8; 5>6; 6>8; 7>8 | out: 1,2,8 | fb: 7->7"
+  },
+  {
+   "number": 26,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 5>8; 6>8; 7>8 | out: 1,2,8 | fb: 6->6"
+  },
+  {
+   "number": 27,
+   "carriers": [
+    1,
+    2,
+    4,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4,
+     5
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4,5; 6>7; 7>8 | out: 1,2,4,5,8 | fb: 3->3"
+  },
+  {
+   "number": 28,
+   "carriers": [
+    1,
+    2,
+    5,
+    7,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     7
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 6>7 | out: 1,2,5,7,8 | fb: 6->6"
+  },
+  {
+   "number": 29,
+   "carriers": [
+    1,
+    2,
+    4,
+    5,
+    7,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4,
+     5
+    ],
+    "6": [
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 3>4,5; 6>7,8 | out: 1,2,4,5,7,8 | fb: 6->6"
+  },
+  {
+   "number": 30,
+   "carriers": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4,
+     5,
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4,5,6; 7>8 | out: 1,2,4,5,6,8 | fb: 3->3"
+  },
+  {
+   "number": 31,
+   "carriers": [
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2,
+     3
+    ],
+    "4": [
+     5
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2,3; 4>5 | out: 2,3,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 32,
+   "carriers": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2,
+     3
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2,3 | out: 2,3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 33,
+   "carriers": [
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "4": [
+     5
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 4>5 | out: 3,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 34,
+   "carriers": [
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "4": [
+     5
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 4>5 | out: 3,5,6,7,8 | fb: 4->4"
+  },
+  {
+   "number": 35,
+   "carriers": [
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "4": [
+     5
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 4>5 | out: 3,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 36,
+   "carriers": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3 | out: 3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 37,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>5; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 38,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 39,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     6
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>6; 4>5; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 40,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     7
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>7; 4>5; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 41,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     8
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>8; 4>5; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 42,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     6
+    ],
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>6; 4>6; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 43,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     7
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>7; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 44,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     7
+    ],
+    "4": [
+     7
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>7; 4>7; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 45,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     7
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>7; 6>7; 7>8 | out: 1,2,8 | fb: 6->6"
+  },
+  {
+   "number": 46,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     4
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>4; 4>8; 5>6; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 47,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>6; 6>8; 7>8 | out: 1,2,8 | fb: 7->7"
+  },
+  {
+   "number": 48,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     6
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>6; 4>5; 5>6; 6>8; 7>8 | out: 1,2,8 | fb: 7->7"
+  },
+  {
+   "number": 49,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     7
+    ],
+    "4": [
+     7
+    ],
+    "5": [
+     7
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>7; 4>7; 5>7; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 50,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     6
+    ],
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>6; 4>6; 5>6; 6>8; 7>8 | out: 1,2,8 | fb: 7->7"
+  },
+  {
+   "number": 51,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>8; 6>7; 7>8 | out: 1,2,8 | fb: 6->6"
+  },
+  {
+   "number": 52,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     8
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>8; 4>8; 5>8; 6>7; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 53,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 5>8; 6>8; 7>8 | out: 1,2,8 | fb: 7->7"
+  },
+  {
+   "number": 54,
+   "carriers": [
+    1,
+    2,
+    8
+   ],
+   "modulators": {
+    "3": [
+     8
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>8; 4>8; 5>8; 6>8; 7>8 | out: 1,2,8 | fb: 3->3"
+  },
+  {
+   "number": 55,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 4>5; 5>6; 6>7; 7>8 | out: 1,2,3,8 | fb: 1->1"
+  },
+  {
+   "number": 56,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>6; 5>6; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 57,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     7
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>7; 5>6; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 58,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     8
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>8; 5>6; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 59,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     7
+    ],
+    "5": [
+     7
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>7; 5>7; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 60,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>5; 5>8; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 61,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     8
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>8; 5>8; 6>7; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 62,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     6
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 7,
+    "to": 7,
+    "self": true
+   },
+   "ascii": "mod: 4>6; 5>6; 6>8; 7>8 | out: 1,2,3,8 | fb: 7->7"
+  },
+  {
+   "number": 63,
+   "carriers": [
+    1,
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "4": [
+     8
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 4,
+    "to": 4,
+    "self": true
+   },
+   "ascii": "mod: 4>8; 5>8; 6>8; 7>8 | out: 1,2,3,8 | fb: 4->4"
+  },
+  {
+   "number": 64,
+   "carriers": [
+    1,
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>5; 4>5; 6>8; 7>8 | out: 1,2,5,8 | fb: 3->3"
+  },
+  {
+   "number": 65,
+   "carriers": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "3": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "4": [
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 3,
+    "to": 3,
+    "self": true
+   },
+   "ascii": "mod: 3>5,6,7,8; 4>5,6,7,8 | out: 1,2,5,6,7,8 | fb: 3->3",
+   "uncertain": "Ops 3 and 4 both sit above a horizontal bus feeding 5,6,7,8; op 4's line crosses that bus at op 5's stub. Read as both 3 and 4 modulating 5-8 (same drawing idiom as alg 80's ops 1,2 -> 3-8). Alternative reading: 3 -> 5,6,7,8 and 4 -> 5 only."
+  },
+  {
+   "number": 66,
+   "carriers": [
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 3>4; 4>5; 5>6; 6>7; 7>8 | out: 8 | fb: 1->1"
+  },
+  {
+   "number": 67,
+   "carriers": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>4; 5>6; 7>8 | out: 2,4,6,8 | fb: 1->1"
+  },
+  {
+   "number": 68,
+   "carriers": [
+    8
+   ],
+   "modulators": {
+    "1": [
+     8
+    ],
+    "2": [
+     8
+    ],
+    "3": [
+     8
+    ],
+    "4": [
+     8
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>8; 2>8; 3>8; 4>8; 5>8; 6>8; 7>8 | out: 8 | fb: 1->1"
+  },
+  {
+   "number": 69,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 3>4; 5>6; 6>7; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 70,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     7
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 3>4; 5>7; 6>7; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 71,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     4
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>4; 2>3; 3>4; 5>8; 6>7; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 72,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     4
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>4; 3>4; 5>6; 6>8; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 73,
+   "carriers": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "2": [
+     3
+    ],
+    "4": [
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 2,
+    "to": 2,
+    "self": true
+   },
+   "ascii": "mod: 2>3; 4>5,6,7,8 | out: 1,3,5,6,7,8 | fb: 2->2"
+  },
+  {
+   "number": 74,
+   "carriers": [
+    2,
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>4; 5>6; 6>8; 7>8 | out: 2,4,8 | fb: 1->1"
+  },
+  {
+   "number": 75,
+   "carriers": [
+    2,
+    3,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2,
+     3
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2,3; 4>5; 5>8; 6>7; 7>8 | out: 2,3,8 | fb: 1->1"
+  },
+  {
+   "number": 76,
+   "carriers": [
+    3,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "4": [
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 4>5,6,7,8 | out: 3,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 77,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     4
+    ],
+    "2": [
+     4
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>4; 2>4; 3>4; 5>8; 6>8; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 78,
+   "carriers": [
+    3,
+    5,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     7
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 4>5; 6>7 | out: 3,5,7,8 | fb: 1->1"
+  },
+  {
+   "number": 79,
+   "carriers": [
+    4,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 3>4; 5>6; 6>7; 7>8 | out: 4,8 | fb: 1->1"
+  },
+  {
+   "number": 80,
+   "carriers": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "2": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3,4,5,6,7,8; 2>3,4,5,6,7,8 | out: 3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 81,
+   "carriers": [
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     4
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>4; 4>5; 6>7; 7>8 | out: 2,5,8 | fb: 1->1"
+  },
+  {
+   "number": 82,
+   "carriers": [
+    3,
+    4,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3,
+     4
+    ],
+    "5": [
+     6
+    ],
+    "6": [
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3,4; 5>6; 6>7,8 | out: 3,4,7,8 | fb: 1->1"
+  },
+  {
+   "number": 83,
+   "carriers": [
+    2,
+    5,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     5
+    ],
+    "4": [
+     5
+    ],
+    "6": [
+     8
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>5; 4>5; 6>8; 7>8 | out: 2,5,8 | fb: 1->1"
+  },
+  {
+   "number": 84,
+   "carriers": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "6": [
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 6,
+    "to": 6,
+    "self": true
+   },
+   "ascii": "mod: 1>2,3,4,5; 6>7,8 | out: 2,3,4,5,7,8 | fb: 6->6"
+  },
+  {
+   "number": 85,
+   "carriers": [
+    2,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "3": [
+     8
+    ],
+    "4": [
+     5
+    ],
+    "5": [
+     8
+    ],
+    "6": [
+     7
+    ],
+    "7": [
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 3>8; 4>5; 5>8; 6>7; 7>8 | out: 2,8 | fb: 1->1"
+  },
+  {
+   "number": 86,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3; 3>4,5,6,7,8 | out: 4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 87,
+   "carriers": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     2
+    ],
+    "2": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>2; 2>3,4,5,6,7,8 | out: 3,4,5,6,7,8 | fb: 1->1"
+  },
+  {
+   "number": 88,
+   "carriers": [
+    4,
+    5,
+    6,
+    7,
+    8
+   ],
+   "modulators": {
+    "1": [
+     3
+    ],
+    "2": [
+     3
+    ],
+    "3": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "feedback": {
+    "from": 1,
+    "to": 1,
+    "self": true
+   },
+   "ascii": "mod: 1>3; 2>3; 3>4,5,6,7,8 | out: 4,5,6,7,8 | fb: 1->1"
+  }
+ ]
+}

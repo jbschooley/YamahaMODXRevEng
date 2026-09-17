@@ -1,0 +1,355 @@
+{
+ "title": "MONTAGE M Controller Box Source list",
+ "source": "MONTAGE M Data List (montage_m_dl_H0.pdf, Yamaha), PDF page index == printed page number for these sections",
+ "source_pages": [
+  198
+ ],
+ "columns": {
+  "common": "usable as Source in the Common/AD Controller Box (Performance common / A/D part)",
+  "part": "usable as Source in a Part Controller Box"
+ },
+ "notes": [
+  "Marks in the PDF are a circle glyph (private-use U+F0A1, rendered as O) for available and x for not available.",
+  "MIDI Data Table cross-check: Part 'Controller Set Source' (address 1p 05 bb 02) is documented as range 0-39; Common/AD 'Controller Set Source' (06 05 bb 02) is documented as range '8-15, 18-39' (Assignable Knobs 1-8, Motion Seq 1-4, Envelope Followers) even though this Control List marks all of 0-39 as usable for Common. Treat the SysEx range as the authoritative encoding limit; the discrepancy is in the source document.",
+  "Part Controller Boxes: 32 per Part (address 1p 05 bb 00, bb=0-31; the address map on p.221 says 'Controller Box No. (0...32)', the parameter table on p.246 says 'bb = 0-7F Controller Box 1-32'). Common/AD Controller Boxes: 32 (06 05 bb 00, bb=0-31).",
+  "Super Knob is not itself a Source number; it drives Assignable Knobs 1-8 (sources 8-15) via the Super Knob Settings / Assignable Knob Link Switches (see docs/controllers-reference.md)."
+ ],
+ "sources": [
+  {
+   "number": 0,
+   "name": "Pitch Bend",
+   "short_name": "PitchBend",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 1,
+   "name": "Modulation Wheel",
+   "short_name": "ModWheel",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 2,
+   "name": "After Touch",
+   "short_name": "AfterTouch",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 3,
+   "name": "Foot Controller 1",
+   "short_name": "FootCtrl 1",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 4,
+   "name": "Foot Controller 2",
+   "short_name": "FootCtrl 2",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 5,
+   "name": "Foot Switch",
+   "short_name": "FootSwitch",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 6,
+   "name": "Ribbon Controller",
+   "short_name": "Ribbon",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 7,
+   "name": "Breath Controller",
+   "short_name": "Breath",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 8,
+   "name": "Assignable Knob 1",
+   "short_name": "AsgnKnob 1",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 9,
+   "name": "Assignable Knob 2",
+   "short_name": "AsgnKnob 2",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 10,
+   "name": "Assignable Knob 3",
+   "short_name": "AsgnKnob 3",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 11,
+   "name": "Assignable Knob 4",
+   "short_name": "AsgnKnob 4",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 12,
+   "name": "Assignable Knob 5",
+   "short_name": "AsgnKnob 5",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 13,
+   "name": "Assignable Knob 6",
+   "short_name": "AsgnKnob 6",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 14,
+   "name": "Assignable Knob 7",
+   "short_name": "AsgnKnob 7",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 15,
+   "name": "Assignable Knob 8",
+   "short_name": "AsgnKnob 8",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 16,
+   "name": "Assignable Switch 1",
+   "short_name": "AsgnSw 1",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 17,
+   "name": "Assignable Switch 2",
+   "short_name": "AsgnSw 2",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 18,
+   "name": "Motion Seq 1",
+   "short_name": "MotionSeq 1",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 19,
+   "name": "Motion Seq 2",
+   "short_name": "MotionSeq 2",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 20,
+   "name": "Motion Seq 3",
+   "short_name": "MotionSeq 3",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 21,
+   "name": "Motion Seq 4",
+   "short_name": "MotionSeq 4",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 22,
+   "name": "Envelope Follower 1",
+   "short_name": "EnvFollow 1",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 23,
+   "name": "Envelope Follower 2",
+   "short_name": "EnvFollow 2",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 24,
+   "name": "Envelope Follower 3",
+   "short_name": "EnvFollow 3",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 25,
+   "name": "Envelope Follower 4",
+   "short_name": "EnvFollow 4",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 26,
+   "name": "Envelope Follower 5",
+   "short_name": "EnvFollow 5",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 27,
+   "name": "Envelope Follower 6",
+   "short_name": "EnvFollow 6",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 28,
+   "name": "Envelope Follower 7",
+   "short_name": "EnvFollow 7",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 29,
+   "name": "Envelope Follower 8",
+   "short_name": "EnvFollow 8",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 30,
+   "name": "Envelope Follower 9",
+   "short_name": "EnvFollow 9",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 31,
+   "name": "Envelope Follower 10",
+   "short_name": "EnvFollow 10",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 32,
+   "name": "Envelope Follower 11",
+   "short_name": "EnvFollow 11",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 33,
+   "name": "Envelope Follower 12",
+   "short_name": "EnvFollow 12",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 34,
+   "name": "Envelope Follower 13",
+   "short_name": "EnvFollow 13",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 35,
+   "name": "Envelope Follower 14",
+   "short_name": "EnvFollow 14",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 36,
+   "name": "Envelope Follower 15",
+   "short_name": "EnvFollow 15",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 37,
+   "name": "Envelope Follower 16",
+   "short_name": "EnvFollow 16",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 38,
+   "name": "Envelope Follower A/D",
+   "short_name": "EnvFollowAD",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 39,
+   "name": "Envelope Follower Master",
+   "short_name": "EnvFollowMst",
+   "common": true,
+   "part": true,
+   "reserved": false
+  },
+  {
+   "number": 40,
+   "name": null,
+   "short_name": null,
+   "common": false,
+   "part": false,
+   "reserved": true
+  },
+  {
+   "number": 41,
+   "name": null,
+   "short_name": null,
+   "common": false,
+   "part": false,
+   "reserved": true
+  }
+ ]
+}

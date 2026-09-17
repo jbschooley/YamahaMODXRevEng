@@ -1,0 +1,2973 @@
+{
+ "_meta": {
+  "source": "MONTAGE M Data List (montage_m_dl_H0.pdf)",
+  "section": "Effect Type List",
+  "source_pages": [
+   157,
+   158
+  ],
+  "count": 106,
+  "notes": [
+   "Order is the printed order of the Effect Type List.",
+   "type_hex / type_msb / type_lsb are the \"Type (HEX)\" MSB/LSB columns; this 2-byte value is what the MIDI parameters Reverb Type, Variation Type, Insertion-A/B Type, Master Effect Type and VCM Rotary Speaker Type carry (see docs/effects-reference.md). type_number = MSB*128 + LSB.",
+   "list_numbers.* are the per-block ordinal columns REV / VAR / InsA / InsB / ADIns / VCM Rotary / Mas as printed (null = type not offered in that block). available_in lists the blocks whose column is non-empty.",
+   "side_chain_modulator is the bullet in the \"Side Chain/Modulator\" column (a Symbol-font glyph U+F06C in the PDF; recovered from bounding boxes).",
+   "The Effect Type List has no description column; description is always null."
+  ]
+ },
+ "effect_types": [
+  {
+   "list_index": 0,
+   "category": null,
+   "short_name": "---",
+   "name": "NO EFFECT",
+   "description": null,
+   "type_hex": "00 00",
+   "type_msb": 0,
+   "type_lsb": 0,
+   "type_number": 0,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb",
+    "variation"
+   ],
+   "list_numbers": {
+    "reverb": 0,
+    "variation": 0,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 1,
+   "category": null,
+   "short_name": "---",
+   "name": "THRU",
+   "description": null,
+   "type_hex": "00 00",
+   "type_msb": 0,
+   "type_lsb": 0,
+   "type_number": 0,
+   "side_chain_modulator": false,
+   "available_in": [
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "vcm_rotary"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": null,
+    "insertion_a": 0,
+    "insertion_b": 0,
+    "ad_insertion": 0,
+    "vcm_rotary": 0,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 2,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "HD HALL",
+   "description": null,
+   "type_hex": "01 03",
+   "type_msb": 1,
+   "type_lsb": 3,
+   "type_number": 131,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 1,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 3,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "REV-X HALL",
+   "description": null,
+   "type_hex": "01 00",
+   "type_msb": 1,
+   "type_lsb": 0,
+   "type_number": 128,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 2,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 4,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "R3 HALL",
+   "description": null,
+   "type_hex": "01 01",
+   "type_msb": 1,
+   "type_lsb": 1,
+   "type_number": 129,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 3,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 5,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "SPX HALL",
+   "description": null,
+   "type_hex": "01 02",
+   "type_msb": 1,
+   "type_lsb": 2,
+   "type_number": 130,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb",
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": 4,
+    "variation": 1,
+    "insertion_a": 1,
+    "insertion_b": 1,
+    "ad_insertion": 1,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 6,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "HD ROOM",
+   "description": null,
+   "type_hex": "01 13",
+   "type_msb": 1,
+   "type_lsb": 19,
+   "type_number": 147,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 5,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 7,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "REV-X ROOM",
+   "description": null,
+   "type_hex": "01 10",
+   "type_msb": 1,
+   "type_lsb": 16,
+   "type_number": 144,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 6,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 8,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "R3 ROOM",
+   "description": null,
+   "type_hex": "01 11",
+   "type_msb": 1,
+   "type_lsb": 17,
+   "type_number": 145,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 7,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 9,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "SPX ROOM",
+   "description": null,
+   "type_hex": "01 12",
+   "type_msb": 1,
+   "type_lsb": 18,
+   "type_number": 146,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb",
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": 8,
+    "variation": 2,
+    "insertion_a": 2,
+    "insertion_b": 2,
+    "ad_insertion": 2,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 10,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "HD PLATE",
+   "description": null,
+   "type_hex": "01 21",
+   "type_msb": 1,
+   "type_lsb": 33,
+   "type_number": 161,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 9,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 11,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "R3 PLATE",
+   "description": null,
+   "type_hex": "01 20",
+   "type_msb": 1,
+   "type_lsb": 32,
+   "type_number": 160,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 10,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 12,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "SPX STAGE",
+   "description": null,
+   "type_hex": "01 30",
+   "type_msb": 1,
+   "type_lsb": 48,
+   "type_number": 176,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb",
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": 11,
+    "variation": 3,
+    "insertion_a": 3,
+    "insertion_b": 3,
+    "ad_insertion": 3,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 13,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "SPACE SIMULATOR",
+   "description": null,
+   "type_hex": "01 40",
+   "type_msb": 1,
+   "type_lsb": 64,
+   "type_number": 192,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 12,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 14,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "GATED REVERB",
+   "description": null,
+   "type_hex": "01 50",
+   "type_msb": 1,
+   "type_lsb": 80,
+   "type_number": 208,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 4,
+    "insertion_a": 4,
+    "insertion_b": 4,
+    "ad_insertion": 4,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 15,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "REVERSE REVERB",
+   "description": null,
+   "type_hex": "01 58",
+   "type_msb": 1,
+   "type_lsb": 88,
+   "type_number": 216,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 5,
+    "insertion_a": 5,
+    "insertion_b": 5,
+    "ad_insertion": 5,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 16,
+   "category": "REVERB",
+   "short_name": "REV",
+   "name": "SHIMMER REVERB",
+   "description": null,
+   "type_hex": "01 60",
+   "type_msb": 1,
+   "type_lsb": 96,
+   "type_number": 224,
+   "side_chain_modulator": false,
+   "available_in": [
+    "reverb"
+   ],
+   "list_numbers": {
+    "reverb": 13,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 17,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "CROSS DELAY",
+   "description": null,
+   "type_hex": "02 00",
+   "type_msb": 2,
+   "type_lsb": 0,
+   "type_number": 256,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 6,
+    "insertion_a": 6,
+    "insertion_b": 6,
+    "ad_insertion": 6,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 18,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "TEMPO CROSS DELAY",
+   "description": null,
+   "type_hex": "02 10",
+   "type_msb": 2,
+   "type_lsb": 16,
+   "type_number": 272,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 7,
+    "insertion_a": 7,
+    "insertion_b": 7,
+    "ad_insertion": 7,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 19,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "TEMPO DELAY MONO",
+   "description": null,
+   "type_hex": "02 20",
+   "type_msb": 2,
+   "type_lsb": 32,
+   "type_number": 288,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 8,
+    "insertion_a": 8,
+    "insertion_b": 8,
+    "ad_insertion": 8,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 20,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "TEMPO DELAY STEREO",
+   "description": null,
+   "type_hex": "02 28",
+   "type_msb": 2,
+   "type_lsb": 40,
+   "type_number": 296,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 9,
+    "insertion_a": 9,
+    "insertion_b": 9,
+    "ad_insertion": 9,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 21,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "CONTROL DELAY",
+   "description": null,
+   "type_hex": "02 30",
+   "type_msb": 2,
+   "type_lsb": 48,
+   "type_number": 304,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 10,
+    "insertion_a": 10,
+    "insertion_b": 10,
+    "ad_insertion": 10,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 22,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "DELAY LR",
+   "description": null,
+   "type_hex": "02 40",
+   "type_msb": 2,
+   "type_lsb": 64,
+   "type_number": 320,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 11,
+    "insertion_a": 11,
+    "insertion_b": 11,
+    "ad_insertion": 11,
+    "vcm_rotary": null,
+    "master": 0
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 23,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "DELAY LCR",
+   "description": null,
+   "type_hex": "02 50",
+   "type_msb": 2,
+   "type_lsb": 80,
+   "type_number": 336,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 12,
+    "insertion_a": 12,
+    "insertion_b": 12,
+    "ad_insertion": 12,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 24,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "ANALOG DELAY RETRO",
+   "description": null,
+   "type_hex": "02 60",
+   "type_msb": 2,
+   "type_lsb": 96,
+   "type_number": 352,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 13,
+    "insertion_a": 13,
+    "insertion_b": 13,
+    "ad_insertion": 13,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 25,
+   "category": "DELAY",
+   "short_name": "DLY",
+   "name": "ANALOG DELAY MODERN",
+   "description": null,
+   "type_hex": "02 68",
+   "type_msb": 2,
+   "type_lsb": 104,
+   "type_number": 360,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 14,
+    "insertion_a": 14,
+    "insertion_b": 14,
+    "ad_insertion": 14,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 26,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "G CHORUS",
+   "description": null,
+   "type_hex": "03 00",
+   "type_msb": 3,
+   "type_lsb": 0,
+   "type_number": 384,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 15,
+    "insertion_a": 15,
+    "insertion_b": 15,
+    "ad_insertion": 15,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 27,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "2 MODULATOR",
+   "description": null,
+   "type_hex": "03 10",
+   "type_msb": 3,
+   "type_lsb": 16,
+   "type_number": 400,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 16,
+    "insertion_a": 16,
+    "insertion_b": 16,
+    "ad_insertion": 16,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 28,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "SPX CHORUS",
+   "description": null,
+   "type_hex": "03 20",
+   "type_msb": 3,
+   "type_lsb": 32,
+   "type_number": 416,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 17,
+    "insertion_a": 17,
+    "insertion_b": 17,
+    "ad_insertion": 17,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 29,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "SYMPHONIC",
+   "description": null,
+   "type_hex": "03 30",
+   "type_msb": 3,
+   "type_lsb": 48,
+   "type_number": 432,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 18,
+    "insertion_a": 18,
+    "insertion_b": 18,
+    "ad_insertion": 18,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 30,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "ENSEMBLE DETUNE",
+   "description": null,
+   "type_hex": "03 40",
+   "type_msb": 3,
+   "type_lsb": 64,
+   "type_number": 448,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 19,
+    "insertion_a": 19,
+    "insertion_b": 19,
+    "ad_insertion": 19,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 31,
+   "category": "CHORUS",
+   "short_name": "CHO",
+   "name": "GS1 ENSEMBLE & TREMOLO",
+   "description": null,
+   "type_hex": "03 50",
+   "type_msb": 3,
+   "type_lsb": 80,
+   "type_number": 464,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 20,
+    "insertion_a": 20,
+    "insertion_b": 20,
+    "ad_insertion": 20,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 32,
+   "category": "FLANGER",
+   "short_name": "FLG",
+   "name": "VCM FLANGER",
+   "description": null,
+   "type_hex": "04 00",
+   "type_msb": 4,
+   "type_lsb": 0,
+   "type_number": 512,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 21,
+    "insertion_a": 21,
+    "insertion_b": 21,
+    "ad_insertion": 21,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 33,
+   "category": "FLANGER",
+   "short_name": "FLG",
+   "name": "CLASSIC FLANGER",
+   "description": null,
+   "type_hex": "04 10",
+   "type_msb": 4,
+   "type_lsb": 16,
+   "type_number": 528,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 22,
+    "insertion_a": 22,
+    "insertion_b": 22,
+    "ad_insertion": 22,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 34,
+   "category": "FLANGER",
+   "short_name": "FLG",
+   "name": "TEMPO FLANGER",
+   "description": null,
+   "type_hex": "04 20",
+   "type_msb": 4,
+   "type_lsb": 32,
+   "type_number": 544,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 23,
+    "insertion_a": 23,
+    "insertion_b": 23,
+    "ad_insertion": 23,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 35,
+   "category": "FLANGER",
+   "short_name": "FLG",
+   "name": "DYNAMIC FLANGER",
+   "description": null,
+   "type_hex": "04 30",
+   "type_msb": 4,
+   "type_lsb": 48,
+   "type_number": 560,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 24,
+    "insertion_a": 24,
+    "insertion_b": 24,
+    "ad_insertion": 24,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 36,
+   "category": "FLANGER",
+   "short_name": "FLG",
+   "name": "CONTROL FLANGER",
+   "description": null,
+   "type_hex": "04 08",
+   "type_msb": 4,
+   "type_lsb": 8,
+   "type_number": 520,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 25,
+    "insertion_a": 25,
+    "insertion_b": 25,
+    "ad_insertion": 25,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 37,
+   "category": "PHASER",
+   "short_name": "PHA",
+   "name": "VCM PHASER MONO",
+   "description": null,
+   "type_hex": "05 00",
+   "type_msb": 5,
+   "type_lsb": 0,
+   "type_number": 640,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 26,
+    "insertion_a": 26,
+    "insertion_b": 26,
+    "ad_insertion": 26,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 38,
+   "category": "PHASER",
+   "short_name": "PHA",
+   "name": "VCM PHASER STEREO",
+   "description": null,
+   "type_hex": "05 10",
+   "type_msb": 5,
+   "type_lsb": 16,
+   "type_number": 656,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 27,
+    "insertion_a": 27,
+    "insertion_b": 27,
+    "ad_insertion": 27,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 39,
+   "category": "PHASER",
+   "short_name": "PHA",
+   "name": "TEMPO PHASER",
+   "description": null,
+   "type_hex": "05 20",
+   "type_msb": 5,
+   "type_lsb": 32,
+   "type_number": 672,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 28,
+    "insertion_a": 28,
+    "insertion_b": 28,
+    "ad_insertion": 28,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 40,
+   "category": "PHASER",
+   "short_name": "PHA",
+   "name": "DYNAMIC PHASER",
+   "description": null,
+   "type_hex": "05 30",
+   "type_msb": 5,
+   "type_lsb": 48,
+   "type_number": 688,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 29,
+    "insertion_a": 29,
+    "insertion_b": 29,
+    "ad_insertion": 29,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 41,
+   "category": "PHASER",
+   "short_name": "PHA",
+   "name": "CONTROL PHASER",
+   "description": null,
+   "type_hex": "05 18",
+   "type_msb": 5,
+   "type_lsb": 24,
+   "type_number": 664,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 30,
+    "insertion_a": 30,
+    "insertion_b": 30,
+    "ad_insertion": 30,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 42,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "AUTO PAN",
+   "description": null,
+   "type_hex": "06 00",
+   "type_msb": 6,
+   "type_lsb": 0,
+   "type_number": 768,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 31,
+    "insertion_a": 31,
+    "insertion_b": 31,
+    "ad_insertion": 31,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 43,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "TREMOLO",
+   "description": null,
+   "type_hex": "06 10",
+   "type_msb": 6,
+   "type_lsb": 16,
+   "type_number": 784,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 32,
+    "insertion_a": 32,
+    "insertion_b": 32,
+    "ad_insertion": 32,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 44,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "ROTARY SPEAKER 1",
+   "description": null,
+   "type_hex": "06 20",
+   "type_msb": 6,
+   "type_lsb": 32,
+   "type_number": 800,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 33,
+    "insertion_a": 33,
+    "insertion_b": 33,
+    "ad_insertion": 33,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 45,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "ROTARY SPEAKER 2",
+   "description": null,
+   "type_hex": "06 30",
+   "type_msb": 6,
+   "type_lsb": 48,
+   "type_number": 816,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 34,
+    "insertion_a": 34,
+    "insertion_b": 34,
+    "ad_insertion": 34,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 46,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "VCM ROTARY SPEAKER CLASSIC",
+   "description": null,
+   "type_hex": "06 40",
+   "type_msb": 6,
+   "type_lsb": 64,
+   "type_number": 832,
+   "side_chain_modulator": false,
+   "available_in": [
+    "vcm_rotary"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": 1,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 47,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "VCM ROTARY SPEAKER OVERDRIVE",
+   "description": null,
+   "type_hex": "06 41",
+   "type_msb": 6,
+   "type_lsb": 65,
+   "type_number": 833,
+   "side_chain_modulator": false,
+   "available_in": [
+    "vcm_rotary"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": 2,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 48,
+   "category": "TREMOLO&ROTARY",
+   "short_name": "T&R",
+   "name": "VCM ROTARY SPEAKER STUDIO",
+   "description": null,
+   "type_hex": "06 42",
+   "type_msb": 6,
+   "type_lsb": 66,
+   "type_number": 834,
+   "side_chain_modulator": false,
+   "available_in": [
+    "vcm_rotary"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": null,
+    "insertion_a": null,
+    "insertion_b": null,
+    "ad_insertion": null,
+    "vcm_rotary": 3,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 49,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "AMP SIMULATOR 1",
+   "description": null,
+   "type_hex": "07 00",
+   "type_msb": 7,
+   "type_lsb": 0,
+   "type_number": 896,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 35,
+    "insertion_a": 35,
+    "insertion_b": 35,
+    "ad_insertion": 35,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 50,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "AMP SIMULATOR 2",
+   "description": null,
+   "type_hex": "07 10",
+   "type_msb": 7,
+   "type_lsb": 16,
+   "type_number": 912,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 36,
+    "insertion_a": 36,
+    "insertion_b": 36,
+    "ad_insertion": 36,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 51,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "COMP DISTORTION",
+   "description": null,
+   "type_hex": "07 20",
+   "type_msb": 7,
+   "type_lsb": 32,
+   "type_number": 928,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 37,
+    "insertion_a": 37,
+    "insertion_b": 37,
+    "ad_insertion": 37,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 52,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "COMP DISTORTION DELAY",
+   "description": null,
+   "type_hex": "07 30",
+   "type_msb": 7,
+   "type_lsb": 48,
+   "type_number": 944,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 38,
+    "insertion_a": 38,
+    "insertion_b": 38,
+    "ad_insertion": 38,
+    "vcm_rotary": null,
+    "master": 1
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 53,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "US COMBO",
+   "description": null,
+   "type_hex": "07 40",
+   "type_msb": 7,
+   "type_lsb": 64,
+   "type_number": 960,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 39,
+    "insertion_a": 39,
+    "insertion_b": 39,
+    "ad_insertion": 39,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 54,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "JAZZ COMBO",
+   "description": null,
+   "type_hex": "07 41",
+   "type_msb": 7,
+   "type_lsb": 65,
+   "type_number": 961,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 40,
+    "insertion_a": 40,
+    "insertion_b": 40,
+    "ad_insertion": 40,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 55,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "US HIGH GAIN",
+   "description": null,
+   "type_hex": "07 42",
+   "type_msb": 7,
+   "type_lsb": 66,
+   "type_number": 962,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 41,
+    "insertion_a": 41,
+    "insertion_b": 41,
+    "ad_insertion": 41,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 56,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "BRITISH LEAD",
+   "description": null,
+   "type_hex": "07 43",
+   "type_msb": 7,
+   "type_lsb": 67,
+   "type_number": 963,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 42,
+    "insertion_a": 42,
+    "insertion_b": 42,
+    "ad_insertion": 42,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 57,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "MULTI FX",
+   "description": null,
+   "type_hex": "07 44",
+   "type_msb": 7,
+   "type_lsb": 68,
+   "type_number": 964,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 43,
+    "insertion_a": 43,
+    "insertion_b": 43,
+    "ad_insertion": 43,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 58,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "SMALL STEREO",
+   "description": null,
+   "type_hex": "07 45",
+   "type_msb": 7,
+   "type_lsb": 69,
+   "type_number": 965,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 44,
+    "insertion_a": 44,
+    "insertion_b": 44,
+    "ad_insertion": 44,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 59,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "BRITISH COMBO",
+   "description": null,
+   "type_hex": "07 46",
+   "type_msb": 7,
+   "type_lsb": 70,
+   "type_number": 966,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 45,
+    "insertion_a": 45,
+    "insertion_b": 45,
+    "ad_insertion": 45,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 60,
+   "category": "DISTORTION",
+   "short_name": "DST",
+   "name": "BRITISH LEGEND",
+   "description": null,
+   "type_hex": "07 47",
+   "type_msb": 7,
+   "type_lsb": 71,
+   "type_number": 967,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 46,
+    "insertion_a": 46,
+    "insertion_b": 46,
+    "ad_insertion": 46,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 61,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "VCM COMPRESSOR 376",
+   "description": null,
+   "type_hex": "08 00",
+   "type_msb": 8,
+   "type_lsb": 0,
+   "type_number": 1024,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 47,
+    "insertion_a": 47,
+    "insertion_b": 47,
+    "ad_insertion": 47,
+    "vcm_rotary": null,
+    "master": 2
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 62,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "CLASSIC COMPRESSOR",
+   "description": null,
+   "type_hex": "08 10",
+   "type_msb": 8,
+   "type_lsb": 16,
+   "type_number": 1040,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 48,
+    "insertion_a": 48,
+    "insertion_b": 48,
+    "ad_insertion": 48,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 63,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "MULTI BAND COMP",
+   "description": null,
+   "type_hex": "08 20",
+   "type_msb": 8,
+   "type_lsb": 32,
+   "type_number": 1056,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 49,
+    "insertion_a": 49,
+    "insertion_b": 49,
+    "ad_insertion": 49,
+    "vcm_rotary": null,
+    "master": 3
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 64,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "UNI COMP DOWN",
+   "description": null,
+   "type_hex": "08 30",
+   "type_msb": 8,
+   "type_lsb": 48,
+   "type_number": 1072,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 50,
+    "insertion_a": 50,
+    "insertion_b": 50,
+    "ad_insertion": 50,
+    "vcm_rotary": null,
+    "master": 4
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 65,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "UNI COMP UP",
+   "description": null,
+   "type_hex": "08 38",
+   "type_msb": 8,
+   "type_lsb": 56,
+   "type_number": 1080,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 51,
+    "insertion_a": 51,
+    "insertion_b": 51,
+    "ad_insertion": 51,
+    "vcm_rotary": null,
+    "master": 5
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 66,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "PARALLEL COMP",
+   "description": null,
+   "type_hex": "08 40",
+   "type_msb": 8,
+   "type_lsb": 64,
+   "type_number": 1088,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 52,
+    "insertion_a": 52,
+    "insertion_b": 52,
+    "ad_insertion": 52,
+    "vcm_rotary": null,
+    "master": 6
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 67,
+   "category": "COMPRESSOR (DYNAMICS)",
+   "short_name": "CMP",
+   "name": "M/S EQ COMPRESSOR",
+   "description": null,
+   "type_hex": "08 50",
+   "type_msb": 8,
+   "type_lsb": 80,
+   "type_number": 1104,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 53,
+    "insertion_a": 53,
+    "insertion_b": 53,
+    "ad_insertion": 53,
+    "vcm_rotary": null,
+    "master": 7
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 68,
+   "category": "WAH",
+   "short_name": "WAH",
+   "name": "VCM AUTO WAH",
+   "description": null,
+   "type_hex": "0A 00",
+   "type_msb": 10,
+   "type_lsb": 0,
+   "type_number": 1280,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 54,
+    "insertion_a": 54,
+    "insertion_b": 54,
+    "ad_insertion": 54,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 69,
+   "category": "WAH",
+   "short_name": "WAH",
+   "name": "VCM TOUCH WAH",
+   "description": null,
+   "type_hex": "0A 10",
+   "type_msb": 10,
+   "type_lsb": 16,
+   "type_number": 1296,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 55,
+    "insertion_a": 55,
+    "insertion_b": 55,
+    "ad_insertion": 55,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 70,
+   "category": "WAH",
+   "short_name": "WAH",
+   "name": "VCM PEDAL WAH",
+   "description": null,
+   "type_hex": "0A 20",
+   "type_msb": 10,
+   "type_lsb": 32,
+   "type_number": 1312,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 56,
+    "insertion_a": 56,
+    "insertion_b": 56,
+    "ad_insertion": 56,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 157
+  },
+  {
+   "list_index": 71,
+   "category": "LO-FI",
+   "short_name": "L-F",
+   "name": "LO-FI",
+   "description": null,
+   "type_hex": "0B 00",
+   "type_msb": 11,
+   "type_lsb": 0,
+   "type_number": 1408,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 57,
+    "insertion_a": 57,
+    "insertion_b": 57,
+    "ad_insertion": 57,
+    "vcm_rotary": null,
+    "master": 8
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 72,
+   "category": "LO-FI",
+   "short_name": "L-F",
+   "name": "NOISY",
+   "description": null,
+   "type_hex": "0B 10",
+   "type_msb": 11,
+   "type_lsb": 16,
+   "type_number": 1424,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 58,
+    "insertion_a": 58,
+    "insertion_b": 58,
+    "ad_insertion": 58,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 73,
+   "category": "LO-FI",
+   "short_name": "L-F",
+   "name": "DIGITAL TURNTABLE",
+   "description": null,
+   "type_hex": "0B 20",
+   "type_msb": 11,
+   "type_lsb": 32,
+   "type_number": 1440,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 59,
+    "insertion_a": 59,
+    "insertion_b": 59,
+    "ad_insertion": 59,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 74,
+   "category": "LO-FI",
+   "short_name": "L-F",
+   "name": "BIT CRUSHER",
+   "description": null,
+   "type_hex": "0B 30",
+   "type_msb": 11,
+   "type_lsb": 48,
+   "type_number": 1456,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 60,
+    "insertion_a": 60,
+    "insertion_b": 60,
+    "ad_insertion": 60,
+    "vcm_rotary": null,
+    "master": 9
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 75,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "RING MODULATOR",
+   "description": null,
+   "type_hex": "0C 00",
+   "type_msb": 12,
+   "type_lsb": 0,
+   "type_number": 1536,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 61,
+    "insertion_a": 61,
+    "insertion_b": 61,
+    "ad_insertion": 61,
+    "vcm_rotary": null,
+    "master": 10
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 76,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "CS RING MODULATOR",
+   "description": null,
+   "type_hex": "0C 08",
+   "type_msb": 12,
+   "type_lsb": 8,
+   "type_number": 1544,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 62,
+    "insertion_a": 62,
+    "insertion_b": 62,
+    "ad_insertion": 62,
+    "vcm_rotary": null,
+    "master": 11
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 77,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "DYNAMIC RING MODULATOR",
+   "description": null,
+   "type_hex": "0C 10",
+   "type_msb": 12,
+   "type_lsb": 16,
+   "type_number": 1552,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 63,
+    "insertion_a": 63,
+    "insertion_b": 63,
+    "ad_insertion": 63,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 78,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "DYNAMIC FILTER",
+   "description": null,
+   "type_hex": "0C 20",
+   "type_msb": 12,
+   "type_lsb": 32,
+   "type_number": 1568,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 64,
+    "insertion_a": 64,
+    "insertion_b": 64,
+    "ad_insertion": 64,
+    "vcm_rotary": null,
+    "master": 12
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 79,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "AUTO SYNTH",
+   "description": null,
+   "type_hex": "0C 30",
+   "type_msb": 12,
+   "type_lsb": 48,
+   "type_number": 1584,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 65,
+    "insertion_a": 65,
+    "insertion_b": 65,
+    "ad_insertion": 65,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 80,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "SPIRALIZER P",
+   "description": null,
+   "type_hex": "0C 38",
+   "type_msb": 12,
+   "type_lsb": 56,
+   "type_number": 1592,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 66,
+    "insertion_a": 66,
+    "insertion_b": 66,
+    "ad_insertion": 66,
+    "vcm_rotary": null,
+    "master": 13
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 81,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "TEMPO SPIRALIZER P",
+   "description": null,
+   "type_hex": "0C 39",
+   "type_msb": 12,
+   "type_lsb": 57,
+   "type_number": 1593,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 67,
+    "insertion_a": 67,
+    "insertion_b": 67,
+    "ad_insertion": 67,
+    "vcm_rotary": null,
+    "master": 14
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 82,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "SPIRALIZER F",
+   "description": null,
+   "type_hex": "0C 3A",
+   "type_msb": 12,
+   "type_lsb": 58,
+   "type_number": 1594,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 68,
+    "insertion_a": 68,
+    "insertion_b": 68,
+    "ad_insertion": 68,
+    "vcm_rotary": null,
+    "master": 15
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 83,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "TEMPO SPIRALIZER F",
+   "description": null,
+   "type_hex": "0C 3B",
+   "type_msb": 12,
+   "type_lsb": 59,
+   "type_number": 1595,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 69,
+    "insertion_a": 69,
+    "insertion_b": 69,
+    "ad_insertion": 69,
+    "vcm_rotary": null,
+    "master": 16
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 84,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "ISOLATOR",
+   "description": null,
+   "type_hex": "0C 40",
+   "type_msb": 12,
+   "type_lsb": 64,
+   "type_number": 1600,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 70,
+    "insertion_a": 70,
+    "insertion_b": 70,
+    "ad_insertion": 70,
+    "vcm_rotary": null,
+    "master": 17
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 85,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "SLICE",
+   "description": null,
+   "type_hex": "0C 50",
+   "type_msb": 12,
+   "type_lsb": 80,
+   "type_number": 1616,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 71,
+    "insertion_a": 71,
+    "insertion_b": 71,
+    "ad_insertion": 71,
+    "vcm_rotary": null,
+    "master": 18
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 86,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "TECH MODULATION",
+   "description": null,
+   "type_hex": "0C 60",
+   "type_msb": 12,
+   "type_lsb": 96,
+   "type_number": 1632,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 72,
+    "insertion_a": 72,
+    "insertion_b": 72,
+    "ad_insertion": 72,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 87,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "CONTROL FILTER",
+   "description": null,
+   "type_hex": "0C 28",
+   "type_msb": 12,
+   "type_lsb": 40,
+   "type_number": 1576,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 73,
+    "insertion_a": 73,
+    "insertion_b": 73,
+    "ad_insertion": 73,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 88,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "VINYL BREAK",
+   "description": null,
+   "type_hex": "0C 70",
+   "type_msb": 12,
+   "type_lsb": 112,
+   "type_number": 1648,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 74,
+    "insertion_a": 74,
+    "insertion_b": 74,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": 19
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 89,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "BEAT REPEAT EVEN",
+   "description": null,
+   "type_hex": "0C 78",
+   "type_msb": 12,
+   "type_lsb": 120,
+   "type_number": 1656,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 75,
+    "insertion_a": 75,
+    "insertion_b": 75,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": 20
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 90,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "BEAT REPEAT TRIPLET",
+   "description": null,
+   "type_hex": "0C 79",
+   "type_msb": 12,
+   "type_lsb": 121,
+   "type_number": 1657,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 76,
+    "insertion_a": 76,
+    "insertion_b": 76,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": 21
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 91,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "BEAT REPEAT EVEN+TRIPLET",
+   "description": null,
+   "type_hex": "0C 7A",
+   "type_msb": 12,
+   "type_lsb": 122,
+   "type_number": 1658,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 77,
+    "insertion_a": 77,
+    "insertion_b": 77,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": 22
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 92,
+   "category": "TECH",
+   "short_name": "TEC",
+   "name": "BEAT REPEAT FREE",
+   "description": null,
+   "type_hex": "0C 7B",
+   "type_msb": 12,
+   "type_lsb": 123,
+   "type_number": 1659,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 78,
+    "insertion_a": 78,
+    "insertion_b": 78,
+    "ad_insertion": null,
+    "vcm_rotary": null,
+    "master": 23
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 93,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "VCM EQ 501",
+   "description": null,
+   "type_hex": "0D 00",
+   "type_msb": 13,
+   "type_lsb": 0,
+   "type_number": 1664,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 79,
+    "insertion_a": 79,
+    "insertion_b": 79,
+    "ad_insertion": 74,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 94,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "PRESENCE",
+   "description": null,
+   "type_hex": "0D 08",
+   "type_msb": 13,
+   "type_lsb": 8,
+   "type_number": 1672,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 80,
+    "insertion_a": 80,
+    "insertion_b": 80,
+    "ad_insertion": 75,
+    "vcm_rotary": null,
+    "master": 24
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 95,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "HARMONIC ENHANCER",
+   "description": null,
+   "type_hex": "0D 10",
+   "type_msb": 13,
+   "type_lsb": 16,
+   "type_number": 1680,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 81,
+    "insertion_a": 81,
+    "insertion_b": 81,
+    "ad_insertion": 76,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 96,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "STEREOPHONIC OPTIMIZER",
+   "description": null,
+   "type_hex": "0D 18",
+   "type_msb": 13,
+   "type_lsb": 24,
+   "type_number": 1688,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 82,
+    "insertion_a": 82,
+    "insertion_b": 82,
+    "ad_insertion": 77,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 97,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "TALKING MODULATOR",
+   "description": null,
+   "type_hex": "0D 20",
+   "type_msb": 13,
+   "type_lsb": 32,
+   "type_number": 1696,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 83,
+    "insertion_a": 83,
+    "insertion_b": 83,
+    "ad_insertion": 78,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 98,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "WAVE FOLDER",
+   "description": null,
+   "type_hex": "0D 28",
+   "type_msb": 13,
+   "type_lsb": 40,
+   "type_number": 1704,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 84,
+    "insertion_a": 84,
+    "insertion_b": 84,
+    "ad_insertion": 79,
+    "vcm_rotary": null,
+    "master": 25
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 99,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "VCM MINI FILTER",
+   "description": null,
+   "type_hex": "0D 29",
+   "type_msb": 13,
+   "type_lsb": 41,
+   "type_number": 1705,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 85,
+    "insertion_a": 85,
+    "insertion_b": 85,
+    "ad_insertion": 80,
+    "vcm_rotary": null,
+    "master": 26
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 100,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "VCM MINI BOOSTER",
+   "description": null,
+   "type_hex": "0D 2A",
+   "type_msb": 13,
+   "type_lsb": 42,
+   "type_number": 1706,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion",
+    "master"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 86,
+    "insertion_a": 86,
+    "insertion_b": 86,
+    "ad_insertion": 81,
+    "vcm_rotary": null,
+    "master": 27
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 101,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "DAMPER RESONANCE",
+   "description": null,
+   "type_hex": "0D 30",
+   "type_msb": 13,
+   "type_lsb": 48,
+   "type_number": 1712,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 87,
+    "insertion_a": 87,
+    "insertion_b": 87,
+    "ad_insertion": 82,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 102,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "PITCH CHANGE",
+   "description": null,
+   "type_hex": "0D 40",
+   "type_msb": 13,
+   "type_lsb": 64,
+   "type_number": 1728,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 88,
+    "insertion_a": 88,
+    "insertion_b": 88,
+    "ad_insertion": 83,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 103,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "EARLY REFLECTION",
+   "description": null,
+   "type_hex": "0D 50",
+   "type_msb": 13,
+   "type_lsb": 80,
+   "type_number": 1744,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 89,
+    "insertion_a": 89,
+    "insertion_b": 89,
+    "ad_insertion": 84,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 104,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "VOCODER",
+   "description": null,
+   "type_hex": "0D 60",
+   "type_msb": 13,
+   "type_lsb": 96,
+   "type_number": 1760,
+   "side_chain_modulator": true,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 90,
+    "insertion_a": 90,
+    "insertion_b": 90,
+    "ad_insertion": 85,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  },
+  {
+   "list_index": 105,
+   "category": "MISC",
+   "short_name": "MSC",
+   "name": "NOISE GATE+COMP+EQ",
+   "description": null,
+   "type_hex": "0D 70",
+   "type_msb": 13,
+   "type_lsb": 112,
+   "type_number": 1776,
+   "side_chain_modulator": false,
+   "available_in": [
+    "variation",
+    "insertion_a",
+    "insertion_b",
+    "ad_insertion"
+   ],
+   "list_numbers": {
+    "reverb": null,
+    "variation": 91,
+    "insertion_a": 91,
+    "insertion_b": 91,
+    "ad_insertion": 86,
+    "vcm_rotary": null,
+    "master": null
+   },
+   "source_page": 158
+  }
+ ]
+}
