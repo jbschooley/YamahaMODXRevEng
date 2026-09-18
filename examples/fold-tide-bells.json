@@ -1,0 +1,354 @@
+{
+  "name": "Fold Tide Bells",
+  "category": [
+    "Pad/Choir",
+    "Bright"
+  ],
+  "tempo": 96,
+  "reverb": {
+    "type": "HD HALL"
+  },
+  "variation": {
+    "type": "TEMPO CROSS DELAY",
+    "params": {
+      "1": 10,
+      "2": 8,
+      "3": 84,
+      "10": 48
+    }
+  },
+  "superknob": {
+    "knob_names": [
+      "Cutoff",
+      "Fold",
+      "Delay",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "links": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "controllers": [
+    {
+      "source": "AsgnKnob 1",
+      "dest": "Part 1 Assign 1",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 1",
+      "dest": "Part 2 Assign 1",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 2",
+      "dest": "Part 1 Assign 2",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 3",
+      "dest": "Part 1 Assign 3",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 3",
+      "dest": "Part 2 Assign 3",
+      "ratio": 64
+    }
+  ],
+  "scenes": {
+    "1": {
+      "s1": {
+        "Scene Keyboard Control Switch Memorize Switch": 1
+      }
+    },
+    "2": {
+      "s1": {
+        "Scene Keyboard Control Switch Memorize Switch": 1
+      }
+    }
+  },
+  "parts": [
+    {
+      "engine": "AN-X",
+      "name": "Fold Tide",
+      "category": [
+        "Pad/Choir",
+        "Bright"
+      ],
+      "volume": 100,
+      "pan": 64,
+      "reverb_send": 48,
+      "variation_send": 30,
+      "arp": {
+        "switch": 0
+      },
+      "anx": {
+        "common": {
+          "Unison": 1,
+          "Unison Detune": 5,
+          "Unison Spread": 16,
+          "Filter Cutoff EG Attack Time": 110,
+          "Filter Cutoff EG Decay Time": 150,
+          "Filter Cutoff EG Sustain Level": 300,
+          "Filter Cutoff EG Release Time": 140,
+          "Amplitude EG Attack Time": 90,
+          "Amplitude EG Decay Time": 150,
+          "Amplitude EG Sustain Level": 480,
+          "Amplitude EG Release Time": 150,
+          "Amplitude Level": 470
+        },
+        "osc": [
+          {
+            "Oscillator Wave": 0,
+            "Oscillator Octave": 3,
+            "Oscillator Pitch": 499,
+            "Oscillator Out Level": 440
+          },
+          {
+            "Oscillator Wave": 3,
+            "Oscillator Octave": 3,
+            "Oscillator Pitch": 509,
+            "Oscillator Out Level": 480
+          },
+          {
+            "Oscillator Wave": 4,
+            "Oscillator Octave": 2,
+            "Oscillator Out Level": 320
+          }
+        ],
+        "filter": [
+          {
+            "Filter Type": 1,
+            "Filter Cutoff": 520,
+            "Filter Resonance": 10,
+            "Filter Cutoff EG Depth": 300
+          }
+        ],
+        "fold": {
+          "Modifier Wave Folder": 90,
+          "Modifier Wave Folder Type": 0,
+          "Modifier Wave Folder Texture": 160,
+          "Modifier Wave Folder LFO Depth": 168,
+          "Modifier LFO Wave": 2,
+          "Modifier LFO Speed": 95,
+          "Modifier LFO Fade In Time": 60
+        }
+      },
+      "ins_a": {
+        "type": "VCM EQ 501"
+      },
+      "ins_b": {
+        "type": "TEMPO CROSS DELAY",
+        "params": {
+          "1": 10,
+          "2": 8,
+          "3": 84,
+          "10": 40
+        }
+      },
+      "knob_names": [
+        "Cutoff",
+        "Fold",
+        "Delay",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "controllers": [
+        {
+          "source": "AsgnKnob 1",
+          "dest": "Cutoff",
+          "ratio": 48
+        },
+        {
+          "source": "AsgnKnob 2",
+          "dest": "Wave Folder",
+          "ratio": 48
+        },
+        {
+          "source": "AsgnKnob 3",
+          "dest": "InsB Param 10",
+          "ratio": 64
+        },
+        {
+          "source": "Modulation Wheel",
+          "dest": "Wave Folder",
+          "ratio": 40
+        },
+        {
+          "source": "AfterTouch",
+          "dest": "Folder LFO",
+          "ratio": 30
+        },
+        {
+          "source": "Ribbon",
+          "dest": "Cutoff",
+          "ratio": 32
+        }
+      ],
+      "scenes": {
+        "1": {
+          "Keyboard Control Switch": 1
+        },
+        "2": {
+          "Keyboard Control Switch": 1
+        }
+      }
+    },
+    {
+      "engine": "FM-X",
+      "name": "Glass Bells",
+      "category": [
+        "Chromatic Perc",
+        "Synth Bell"
+      ],
+      "volume": 82,
+      "pan": 64,
+      "reverb_send": 60,
+      "variation_send": 45,
+      "note_range": [
+        "C3",
+        "G8"
+      ],
+      "arp": {
+        "switch": 0
+      },
+      "fmx": {
+        "common": {
+          "Algorithm Number": 12,
+          "Feedback Level": 1
+        },
+        "filter": {
+          "Filter Type": 1,
+          "Filter Cutoff Frequency": 900
+        },
+        "op": [
+          {
+            "Operator Level": 99,
+            "Tune Coarse": 1,
+            "AEG Decay 1 Time": 70,
+            "AEG Decay 1 Level": 55,
+            "AEG Decay 2 Time": 85,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 60
+          },
+          {
+            "Operator Level": 60,
+            "Tune Coarse": 4,
+            "AEG Decay 1 Time": 60,
+            "AEG Decay 1 Level": 40,
+            "AEG Decay 2 Time": 80,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 55
+          },
+          {
+            "Operator Level": 45,
+            "Tune Coarse": 14,
+            "AEG Decay 1 Time": 40,
+            "AEG Decay 1 Level": 20,
+            "AEG Decay 2 Time": 60,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 40,
+            "Level Velocity Sensitivity": 6
+          },
+          {
+            "Operator Level": 62,
+            "Tune Coarse": 3,
+            "Tune Fine": 50,
+            "AEG Decay 1 Time": 55,
+            "AEG Decay 1 Level": 30,
+            "AEG Decay 2 Time": 70,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 45,
+            "Level Velocity Sensitivity": 6
+          },
+          {
+            "Operator Level": 80,
+            "Tune Coarse": 2,
+            "AEG Decay 1 Time": 70,
+            "AEG Decay 1 Level": 50,
+            "AEG Decay 2 Time": 85,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 60
+          },
+          {
+            "Operator Level": 0
+          },
+          {
+            "Operator Level": 40,
+            "Tune Coarse": 7,
+            "AEG Decay 1 Time": 45,
+            "AEG Decay 1 Level": 20,
+            "AEG Decay 2 Time": 60,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 40
+          },
+          {
+            "Operator Level": 55,
+            "Tune Coarse": 1,
+            "Tune Fine": 3,
+            "AEG Decay 1 Time": 70,
+            "AEG Decay 1 Level": 50,
+            "AEG Decay 2 Time": 85,
+            "AEG Decay 2 Level": 0,
+            "AEG Release Time": 60
+          }
+        ]
+      },
+      "ins_a": {
+        "type": "VCM EQ 501"
+      },
+      "ins_b": {
+        "type": "THRU"
+      },
+      "knob_names": [
+        "Cutoff",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "controllers": [
+        {
+          "source": "AsgnKnob 1",
+          "dest": "Cutoff",
+          "ratio": 40
+        },
+        {
+          "source": "Modulation Wheel",
+          "dest": "LFO2 PMD",
+          "ratio": 18
+        },
+        {
+          "source": "AsgnSw 2",
+          "dest": "Rev Send",
+          "ratio": 40
+        }
+      ],
+      "scenes": {
+        "1": {
+          "Keyboard Control Switch": 1
+        },
+        "2": {
+          "Keyboard Control Switch": 1
+        }
+      }
+    }
+  ]
+}

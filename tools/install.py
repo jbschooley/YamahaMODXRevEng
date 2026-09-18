@@ -6,6 +6,7 @@ Usage:
   install.py add <file.pfm> [--slot N] [--display-name NAME] [--dry-run]
   install.py list [--user-dir DIR]
   install.py remove <slot>
+  install.py replace <slot> <file.pfm>      # overwrite an existing slot in place
 
 The plugin keeps its user bank in
   /Library/Yamaha/Expanded Softsynth Plugin for MONTAGE M/contents/current/performance/40xxxx-Performance.pfm
@@ -71,8 +72,10 @@ def make_record(slot, perf, display_name=None, stamp=None):
     for i, p in enumerate(perf["parts"]):
         if p["engine"] != 255:
             present |= 1 << i
+    # layout (from the plugin's own records): [0..3] id, [4] 0, [5] flag, [6] flag, [7] engine mask,
+    # [8] 2 = single part / 0 = multi, [9] 0, [10..11] part-present mask LE, [12..16] 0, [17..18] stamp, [19..] text
     rec = bytes([0, BANK]) + struct.pack(">H", slot)
-    rec += bytes([0, 0, mask, 2 if len(parts) == 1 else 0, 0])
+    rec += bytes([0, 0, 0, mask, 2 if len(parts) == 1 else 0, 0])
     rec += struct.pack("<H", present)
     rec += bytes(5)
     rec += stamp if stamp else bytes(2)
@@ -116,12 +119,35 @@ def cmd_add(args):
     print(f"installed; index now has {len(recs2)} entries (backup: {bak})")
 
 
+def cmd_replace(args):
+    """replace <slot> <file.pfm>: overwrite an existing User slot's file and refresh its index record
+    (keeps the slot's timestamp bytes so the plugin treats it as the same entry)."""
+    slot, src = int(args[0], 0), args[1]
+    perf = pfm.read_performance(open(src, "rb").read())
+    cfg_path = os.path.join(USER_DIR, "performance.cfg")
+    ver, recs = read_cfg(cfg_path)
+    new, found = [], False
+    for r in recs:
+        if r[1] == BANK and slot_of(r) == slot:
+            new.append(make_record(slot, perf, None, r[17:19]))
+            found = True
+        else:
+            new.append(r)
+    if not found:
+        raise SystemExit(f"slot {slot} not in index")
+    bak = cfg_path + ".bak-" + time.strftime("%Y%m%d-%H%M%S")
+    shutil.copy2(cfg_path, bak)
+    shutil.copy2(src, os.path.join(USER_DIR, "performance", f"{BANK:02X}{slot:04X}-Performance.pfm"))
+    write_cfg(cfg_path, ver, new)
+    print(f"replaced slot {slot}: {new[[slot_of(r) == slot and r[1] == BANK for r in new].index(True)][19:]} (backup: {bak})")
+
+
 def cmd_list(args):
     user_dir = args[args.index("--user-dir") + 1] if "--user-dir" in args else USER_DIR
     ver, recs = read_cfg(os.path.join(user_dir, "performance.cfg"))
     for r in recs:
         label = r[19:].split(b"\0")[0].decode("latin1")
-        print(f"{r[1]:02X}{slot_of(r):04X}  mask={r[6]} single={r[7]} parts={struct.unpack('<H', r[9:11])[0]:04x}  {label}")
+        print(f"{r[1]:02X}{slot_of(r):04X}  mask={r[7]} single={r[8]} parts={struct.unpack('<H', r[10:12])[0]:04x}  {label}")
 
 
 def cmd_remove(args):
@@ -141,4 +167,4 @@ def cmd_remove(args):
 
 
 if __name__ == "__main__":
-    {"add": cmd_add, "list": cmd_list, "remove": cmd_remove}[sys.argv[1]](sys.argv[2:])
+    {"add": cmd_add, "list": cmd_list, "remove": cmd_remove, "replace": cmd_replace}[sys.argv[1]](sys.argv[2:])

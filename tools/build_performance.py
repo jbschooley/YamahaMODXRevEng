@@ -38,6 +38,7 @@ Spec (all keys optional except parts[].engine):
                      "polarity": 0, "curve": 0, "curve_p1": 5}],
     "arp": {"switch": 1, "hold": 2, "numbers": [7501, 0, 0, 0, 0, 0, 0, 0], "names": ["MA_..."]},
     "params": {"p1": {...}, "p2": {...}, "p3": {...}, "lfo": {...}, "arp": {...}},   # raw overrides
+    "scenes": {"1": {"Keyboard Control Switch": 0}, "2": {"Keyboard Control Switch": 1}},   # per-scene part values
     # engine specific
     "anx": {"common": {...}, "osc": [{...},{...},{...}], "osc_sw": [{...}], "filter": [{...},{...}], "fold": {...}},
     "fmx": {"common": {...}, "filter": {...}, "op": [{...} x8], "op_sw": [{...} x8]},
@@ -97,17 +98,31 @@ class Names:
                     self._src[r["short_name"].lower()] = r["number"]
         return _lookup(self._src, v.lower(), "controller source")
 
-    def dest(self, v):
+    ENGINE_COL = {"AWM2": "awm_normal", "DRUM": "awm_drum", "Drum": "awm_drum", "FM-X": "fmx", "AN-X": "anx", None: "common_audio"}
+    ENGINE_CAT = {"AWM2": "AWM", "DRUM": "AWM", "Drum": "AWM", "FM-X": "FM", "AN-X": "AN-X"}
+
+    def dest(self, v, engine=None):
+        """Destination number. Short names like "Cutoff" exist once per engine section, so the part's
+        engine picks the right one (AWM 85 / FM-X 100 / AN-X 142); engine=None means a Common/AD box."""
         if isinstance(v, int):
             return v
         if self._dst is None:
             self._dst = {}
             for r in _json("control_destinations.json")["tables"]["controller_box_destination"]["entries"]:
-                if r.get("name"):
-                    self._dst.setdefault(r["name"].lower(), r["number"])
-                if r.get("short_name"):
-                    self._dst.setdefault(r["short_name"].lower(), r["number"])
-        return _lookup(self._dst, v.lower(), "controller destination")
+                for key in (r.get("name"), r.get("short_name")):
+                    if key:
+                        self._dst.setdefault(key.lower(), []).append(r)
+        cands = _lookup(self._dst, v.lower(), "controller destination")
+        col = self.ENGINE_COL.get(engine, "common_audio")
+        ok = [r for r in cands if r["available"].get(col)]
+        cat = self.ENGINE_CAT.get(engine)
+        if cat:
+            pref = [r for r in ok if (r.get("category") or "").startswith(cat)]
+            if pref:
+                ok = pref
+        if not ok:
+            raise KeyError(f"destination {v!r} is not available for a {engine or 'Common/AD'} controller box")
+        return ok[0]["number"]
 
     def wave(self, v):
         if isinstance(v, int):
@@ -184,13 +199,33 @@ def set_string(size, text):
     return text.encode("latin1")[:size - 1].ljust(size - 1) + b"\0"
 
 
+_FX_DEFAULTS = None
+
+
+def effect_defaults(type_number):
+    global _FX_DEFAULTS
+    if _FX_DEFAULTS is None:
+        _FX_DEFAULTS = _json("effect_defaults.json")["defaults"]
+    return _FX_DEFAULTS.get(str(type_number))
+
+
 def apply_effect(block, base, spec, prefix):
-    """spec = {"type": name|int, "preset": n, "params": {1: v, ...}}"""
+    """spec = {"type": name|int, "preset": n, "params": {1: v, ...}}. Setting a type first loads the
+    factory-typical parameter vector for that type (data/effect_defaults.json), then applies params."""
     if not spec:
         return block
     vals = {}
     if "type" in spec:
-        vals[f"{prefix} Type"] = NAMES.effect(spec["type"])
+        t = NAMES.effect(spec["type"])
+        vals[f"{prefix} Type"] = t
+        d = effect_defaults(t)
+        if d:
+            keys = {p["key"] for p in pfm.load_tables()[base]["params"]}
+            for i, v in enumerate(d["params"], 1):
+                if f"{prefix} Parameter {i}" in keys:
+                    vals[f"{prefix} Parameter {i}"] = v
+            if f"{prefix} Preset Number" in keys:
+                vals[f"{prefix} Preset Number"] = d["preset"]
     if "preset" in spec:
         vals[f"{prefix} Preset Number"] = spec["preset"]
     for n, v in (spec.get("params") or {}).items():
@@ -198,13 +233,13 @@ def apply_effect(block, base, spec, prefix):
     return setp(block, base, vals)
 
 
-def build_controller(template_block, c):
+def build_controller(template_block, c, engine=None):
     """Controller box from {"source", "dest", "ratio" (-128..+127, default +32), "polarity" (0 uni/1 bi),
     "curve" (0-31 preset type), "curve_p1", "curve_p2"}. Ratio raw = display + 128 (Data List: range
     00 00–01 7F printed as −128 – +127, default 01 40 = +64)."""
     vals = {"Controller Set Switch": 1,
             "Controller Set Source": NAMES.source(c["source"]),
-            "Controller Set Destination": NAMES.dest(c["dest"]),
+            "Controller Set Destination": NAMES.dest(c["dest"], engine),
             "Controller Set Ratio": c.get("ratio", 32) + 128,
             "Controller Set Polarity": c.get("polarity", 0),
             "Controller Set Curve Type": c.get("curve", 0),
@@ -282,11 +317,14 @@ def build_part(spec, part_index):
         # switch every template box off, then fill from the spec
         boxes = [setp(b, T["part.ctrlbox"], {"Controller Set Switch": 0}) for b in boxes]
         for i, c in enumerate(spec["controllers"][:32]):
-            boxes[i] = build_controller(boxes[i], c)
+            boxes[i] = build_controller(boxes[i], c, engine)
         part["ctrlbox"] = boxes
     if "knob_names" in spec:
         for i, n in enumerate(spec["knob_names"][:8]):
             part["knobnames"][i] = set_string(17, n)
+    for idx, vals in (spec.get("scenes") or {}).items():  # {"1": {"Keyboard Control Switch": 0, ...}} (1-based)
+        i = int(idx) - 1
+        part["scenes"][i] = setp(part["scenes"][i], T["part.scenes"], vals)
     # engine data
     if engine == "AN-X":
         a = part["anx"]
@@ -393,6 +431,12 @@ def build(spec):
             c["knobnames"][i] = set_string(17, n)
     if "links" in sk:
         c["c1"] = setp(c["c1"], T["common.c1"], {f"Assignable Knob{i + 1} Link Switch": v for i, v in enumerate(sk["links"][:8])})
+    for idx, vals in (spec.get("scenes") or {}).items():  # {"1": {"s1": {...}, "s2": {...}}} (1-based)
+        i = int(idx) - 1
+        if "s1" in vals:
+            c["scenes"][i]["s1"] = setp(c["scenes"][i]["s1"], T["common.scenes.s1"], vals["s1"])
+        if "s2" in vals:
+            c["scenes"][i]["s2"] = setp(c["scenes"][i]["s2"], T["common.scenes.s2"], vals["s2"])
     if "controllers" in spec:
         boxes = [setp(b, T["common.ctrlbox"], {"Controller Set Switch": 0}) for b in c["ctrlbox"]]
         for i, cs in enumerate(spec["controllers"][:32]):

@@ -1,0 +1,340 @@
+{
+  "name": "Shut Up and Dance",
+  "category": [
+    "Syn Comp",
+    "Rock/Pop"
+  ],
+  "tempo": 128,
+  "reverb": {
+    "type": "REV-X HALL"
+  },
+  "variation": {
+    "type": "TEMPO CROSS DELAY",
+    "params": {
+      "1": 10,
+      "2": 8,
+      "3": 80,
+      "10": 40
+    }
+  },
+  "superknob": {
+    "knob_names": [
+      "Cutoff",
+      "Reso",
+      "FX Mix",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "links": [
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "controllers": [
+    {
+      "source": "AsgnKnob 1",
+      "dest": "Part 1 Assign 1",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 1",
+      "dest": "Part 2 Assign 1",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 2",
+      "dest": "Part 1 Assign 2",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 2",
+      "dest": "Part 2 Assign 2",
+      "ratio": 64
+    },
+    {
+      "source": "AsgnKnob 3",
+      "dest": "Part 1 Assign 3",
+      "ratio": 64
+    }
+  ],
+  "scenes": {
+    "1": {
+      "s1": {
+        "Scene Keyboard Control Switch Memorize Switch": 1
+      }
+    },
+    "2": {
+      "s1": {
+        "Scene Keyboard Control Switch Memorize Switch": 1
+      }
+    }
+  },
+  "parts": [
+    {
+      "engine": "AN-X",
+      "name": "Backing Strings",
+      "category": [
+        "Pad/Choir",
+        "Analog"
+      ],
+      "volume": 84,
+      "pan": 64,
+      "reverb_send": 40,
+      "variation_send": 12,
+      "arp": {
+        "switch": 0
+      },
+      "anx": {
+        "common": {
+          "Unison": 1,
+          "Unison Detune": 6,
+          "Unison Spread": 14,
+          "Filter Cutoff EG Attack Time": 80,
+          "Filter Cutoff EG Decay Time": 120,
+          "Filter Cutoff EG Sustain Level": 260,
+          "Filter Cutoff EG Release Time": 150,
+          "Amplitude EG Attack Time": 112,
+          "Amplitude EG Decay Time": 140,
+          "Amplitude EG Sustain Level": 460,
+          "Amplitude EG Release Time": 160
+        },
+        "osc": [
+          {
+            "Oscillator Wave": 0,
+            "Oscillator Octave": 3,
+            "Oscillator Pitch": 500,
+            "Oscillator Out Level": 460
+          },
+          {
+            "Oscillator Wave": 0,
+            "Oscillator Octave": 3,
+            "Oscillator Pitch": 508,
+            "Oscillator Out Level": 460
+          },
+          {
+            "Oscillator Wave": 0,
+            "Oscillator Octave": 4,
+            "Oscillator Pitch": 504,
+            "Oscillator Out Level": 300
+          }
+        ],
+        "filter": [
+          {
+            "Filter Type": 1,
+            "Filter Cutoff": 640,
+            "Filter Resonance": 6,
+            "Filter Cutoff EG Depth": 286
+          }
+        ]
+      },
+      "ins_a": {
+        "type": "VCM EQ 501"
+      },
+      "ins_b": {
+        "type": "G CHORUS",
+        "params": {
+          "1": 12,
+          "3": 48,
+          "10": 64
+        }
+      },
+      "knob_names": [
+        "Cutoff",
+        "Reso",
+        "Chorus Mix",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "controllers": [
+        {
+          "source": "Modulation Wheel",
+          "dest": "Cutoff",
+          "ratio": 24
+        },
+        {
+          "source": "AsgnKnob 1",
+          "dest": "Cutoff",
+          "ratio": 40
+        },
+        {
+          "source": "AsgnKnob 2",
+          "dest": "Resonance",
+          "ratio": 20
+        },
+        {
+          "source": "AsgnKnob 3",
+          "dest": "InsB Param 10",
+          "ratio": 64
+        },
+        {
+          "source": "AfterTouch",
+          "dest": "OSC Pitch LFO",
+          "ratio": 8
+        },
+        {
+          "source": "Ribbon",
+          "dest": "Cutoff",
+          "ratio": 32
+        }
+      ],
+      "scenes": {
+        "1": {
+          "Keyboard Control Switch": 1
+        },
+        "2": {
+          "Keyboard Control Switch": 0
+        }
+      }
+    },
+    {
+      "engine": "AN-X",
+      "name": "Square Lead",
+      "category": [
+        "Syn Lead",
+        "Analog"
+      ],
+      "volume": 118,
+      "pan": 64,
+      "reverb_send": 28,
+      "variation_send": 0,
+      "mono": true,
+      "legato": true,
+      "portamento": {
+        "switch": 1,
+        "time": 18,
+        "mode": 0
+      },
+      "arp": {
+        "switch": 0
+      },
+      "anx": {
+        "common": {
+          "Pitch LFO Wave": 3,
+          "Pitch LFO Speed": 224,
+          "Pitch LFO Delay Time": 0,
+          "Pitch LFO Fade In Time": 0,
+          "Amplitude Saturator Drive": 8,
+          "Filter Cutoff EG Attack Time": 0,
+          "Filter Cutoff EG Decay Time": 110,
+          "Filter Cutoff EG Sustain Level": 220,
+          "Filter Cutoff EG Release Time": 60,
+          "Amplitude EG Attack Time": 3,
+          "Amplitude EG Decay Time": 120,
+          "Amplitude EG Sustain Level": 480,
+          "Amplitude EG Release Time": 55
+        },
+        "osc": [
+          {
+            "Oscillator Wave": 2,
+            "Oscillator Octave": 3,
+            "Oscillator Pulse Width": 128,
+            "Oscillator Out Level": 511,
+            "Oscillator Pitch LFO Depth": 283
+          },
+          {
+            "Oscillator Wave": 2,
+            "Oscillator Octave": 3,
+            "Oscillator Pitch": 508,
+            "Oscillator Pulse Width": 128,
+            "Oscillator Out Level": 364,
+            "Oscillator Pitch LFO Depth": 262
+          },
+          {
+            "Oscillator Wave": 0,
+            "Oscillator Octave": 3,
+            "Oscillator Out Level": 90,
+            "Oscillator Pitch LFO Depth": 262
+          }
+        ],
+        "filter": [
+          {
+            "Filter Type": 1,
+            "Filter Cutoff": 204,
+            "Filter Resonance": 0,
+            "Filter Cutoff EG Depth": 296
+          }
+        ]
+      },
+      "ins_a": {
+        "type": "AMP SIMULATOR 1",
+        "params": {
+          "1": 8,
+          "2": 1,
+          "3": 0,
+          "5": 90,
+          "10": 48
+        }
+      },
+      "ins_b": {
+        "type": "THRU"
+      },
+      "knob_names": [
+        "Cutoff",
+        "Reso",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "controllers": [
+        {
+          "source": "AfterTouch",
+          "dest": "OSC Pitch LFO",
+          "ratio": 14
+        },
+        {
+          "source": "AsgnKnob 1",
+          "dest": "Cutoff",
+          "ratio": 48
+        },
+        {
+          "source": "AsgnKnob 2",
+          "dest": "Resonance",
+          "ratio": 24
+        },
+        {
+          "source": "Ribbon",
+          "dest": "Cutoff",
+          "ratio": 32
+        },
+        {
+          "source": "Modulation Wheel",
+          "dest": "OSC Pitch LFO",
+          "ratio": 14
+        },
+        {
+          "source": "Modulation Wheel",
+          "dest": "LFO Spd Pitch",
+          "ratio": 4
+        }
+      ],
+      "scenes": {
+        "1": {
+          "Keyboard Control Switch": 0
+        },
+        "2": {
+          "Keyboard Control Switch": 1
+        }
+      },
+      "params": {
+        "p3": {
+          "3-band EQ High Gain": 42
+        }
+      }
+    }
+  ]
+}
