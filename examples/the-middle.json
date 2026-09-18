@@ -19,9 +19,9 @@
   },
   "superknob": {
     "knob_names": [
-      "Cutoff",
-      "Reso",
-      "Echo Mix",
+      "Harmonic",
+      "Harm Pitch",
+      "Feedback",
       "",
       "",
       "",
@@ -29,8 +29,8 @@
       ""
     ],
     "links": [
-      1,
-      1,
+      0,
+      0,
       0,
       0,
       0,
@@ -51,18 +51,8 @@
       "ratio": 64
     },
     {
-      "source": "AsgnKnob 1",
-      "dest": "Part 2 Assign 1",
-      "ratio": 64
-    },
-    {
-      "source": "AsgnKnob 2",
-      "dest": "Part 2 Assign 2",
-      "ratio": 64
-    },
-    {
       "source": "AsgnKnob 3",
-      "dest": "Part 2 Assign 3",
+      "dest": "Part 1 Assign 3",
       "ratio": 64
     }
   ],
@@ -97,9 +87,9 @@
         "type": "THRU"
       },
       "knob_names": [
-        "Cutoff",
-        "Reso",
-        "",
+        "Harmonic",
+        "Harm Pitch",
+        "Feedback",
         "",
         "",
         "",
@@ -107,16 +97,6 @@
         ""
       ],
       "controllers": [
-        {
-          "source": "AsgnKnob 1",
-          "dest": "Cutoff",
-          "ratio": 48
-        },
-        {
-          "source": "AsgnKnob 2",
-          "dest": "Resonance",
-          "ratio": 24
-        },
         {
           "source": "Modulation Wheel",
           "dest": "Cutoff",
@@ -131,6 +111,21 @@
           "source": "AsgnSw 2",
           "dest": "AEG Release",
           "ratio": 40
+        },
+        {
+          "source": "AsgnKnob 1",
+          "dest": "OP Level",
+          "ratio": 80
+        },
+        {
+          "source": "AsgnKnob 2",
+          "dest": "OP Freq",
+          "ratio": 64
+        },
+        {
+          "source": "AsgnKnob 3",
+          "dest": "Feedback",
+          "ratio": 56
         }
       ],
       "arp": {
@@ -173,8 +168,8 @@
             "Level Velocity Sensitivity": 5
           },
           {
-            "Operator Level": 70,
-            "Tune Coarse": 2,
+            "Operator Level": 0,
+            "Tune Coarse": 4,
             "Tune Fine": 0,
             "AEG Attack Time": 0,
             "AEG Decay 1 Time": 52,
@@ -182,10 +177,11 @@
             "AEG Decay 2 Time": 68,
             "AEG Decay 2 Level": 0,
             "AEG Release Time": 44,
-            "Level Velocity Sensitivity": 5
+            "Level Velocity Sensitivity": 5,
+            "Pitch Controller Sensitivity": 7
           },
           {
-            "Operator Level": 38,
+            "Operator Level": 34,
             "Tune Coarse": 7,
             "Tune Fine": 0,
             "AEG Attack Time": 0,
@@ -233,7 +229,7 @@
             "Level Velocity Sensitivity": 6
           },
           {
-            "Operator Level": 48,
+            "Operator Level": 34,
             "Tune Coarse": 4,
             "Tune Fine": 0,
             "AEG Attack Time": 0,
@@ -256,202 +252,39 @@
             "AEG Release Time": 44,
             "Level Velocity Sensitivity": 5
           }
-        ]
-      }
-    },
-    {
-      "engine": "FM-X",
-      "name": "Octave Echo",
-      "category": [
-        "Syn Comp",
-        "Digital"
-      ],
-      "volume": 96,
-      "pan": 64,
-      "reverb_send": 20,
-      "variation_send": 0,
-      "ins_a": {
-        "type": "VCM EQ 501"
-      },
-      "ins_b": {
-        "type": "TEMPO CROSS DELAY",
-        "params": {
-          "1": 8,
-          "2": 8,
-          "3": 89,
-          "4": 2,
-          "10": 127
-        }
-      },
-      "knob_names": [
-        "Cutoff",
-        "Reso",
-        "Delay Mix",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ],
-      "controllers": [
-        {
-          "source": "AsgnKnob 1",
-          "dest": "Cutoff",
-          "ratio": 48
-        },
-        {
-          "source": "AsgnKnob 2",
-          "dest": "Resonance",
-          "ratio": 24
-        },
-        {
-          "source": "AsgnKnob 3",
-          "dest": "InsB Param 10",
-          "ratio": 64
-        },
-        {
-          "source": "Modulation Wheel",
-          "dest": "Cutoff",
-          "ratio": 20
-        },
-        {
-          "source": "Ribbon",
-          "dest": "Cutoff",
-          "ratio": 32
-        },
-        {
-          "source": "AsgnSw 2",
-          "dest": "AEG Release",
-          "ratio": 40
-        }
-      ],
-      "arp": {
-        "switch": 0
-      },
-      "scenes": {
-        "1": {
-          "Keyboard Control Switch": 1
-        },
-        "2": {
-          "Keyboard Control Switch": 1
-        }
-      },
-      "params": {
-        "p3": {
-          "3-band EQ High Gain": 48,
-          "Note Shift": 76
-        },
-        "p2": {}
-      },
-      "fmx": {
-        "common": {
-          "Algorithm Number": 12,
-          "Feedback Level": 2,
-          "Key On Delay Tempo Sync Switch": 0,
-          "Key On Delay Note Length": 8,
-          "Key On Delay Time Length": 0
-        },
-        "filter": {
-          "Filter Type": 1,
-          "Filter Cutoff Frequency": 820,
-          "Filter Resonance/ Width": 0
-        },
-        "op": [
+        ],
+        "op_sw": [
           {
-            "Operator Level": 99,
-            "Tune Coarse": 1,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 58,
-            "AEG Decay 1 Level": 62,
-            "AEG Decay 2 Time": 72,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 46,
-            "Level Velocity Sensitivity": 5
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 70,
-            "Tune Coarse": 2,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 52,
-            "AEG Decay 1 Level": 45,
-            "AEG Decay 2 Time": 68,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 44,
-            "Level Velocity Sensitivity": 5
+            "Controller Set 4 Switch": 1,
+            "Controller Set 5 Switch": 1
           },
           {
-            "Operator Level": 38,
-            "Tune Coarse": 7,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 34,
-            "AEG Decay 1 Level": 20,
-            "AEG Decay 2 Time": 55,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 30,
-            "Level Velocity Sensitivity": 6
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 68,
-            "Tune Coarse": 3,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 44,
-            "AEG Decay 1 Level": 36,
-            "AEG Decay 2 Time": 60,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 36,
-            "Level Velocity Sensitivity": 6
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 85,
-            "Tune Coarse": 1,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 58,
-            "AEG Decay 1 Level": 60,
-            "AEG Decay 2 Time": 72,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 46,
-            "Level Velocity Sensitivity": 5
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 30,
-            "Tune Coarse": 14,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 28,
-            "AEG Decay 1 Level": 15,
-            "AEG Decay 2 Time": 50,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 28,
-            "Level Velocity Sensitivity": 6
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 48,
-            "Tune Coarse": 4,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 40,
-            "AEG Decay 1 Level": 30,
-            "AEG Decay 2 Time": 58,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 34,
-            "Level Velocity Sensitivity": 6
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           },
           {
-            "Operator Level": 60,
-            "Tune Coarse": 2,
-            "Tune Fine": 0,
-            "AEG Attack Time": 0,
-            "AEG Decay 1 Time": 50,
-            "AEG Decay 1 Level": 45,
-            "AEG Decay 2 Time": 66,
-            "AEG Decay 2 Level": 0,
-            "AEG Release Time": 44,
-            "Level Velocity Sensitivity": 5
+            "Controller Set 4 Switch": 0,
+            "Controller Set 5 Switch": 0
           }
         ]
       }
